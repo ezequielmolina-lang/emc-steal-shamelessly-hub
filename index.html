@@ -472,21 +472,21 @@
       align-items: center;
       justify-content: center;
       background: #FFFFFF;
-      border-radius: 16px;
+      border-radius: 50%;
       overflow: hidden;
     }
     @media (max-width: 767px) {
       .gallito-container {
-        width: 260px;
-        height: 260px;
+        width: 280px;
+        height: 280px;
       }
     }
     .gallito-container img,
     .gallito-container video {
-      width: 100%;
-      height: 100%;
+      width: 220%;
+      height: 220%;
       object-fit: contain;
-      filter: drop-shadow(0 12px 32px rgba(245,123,33,0.18));
+      margin-top: -15%;
     }
     .gallito-label {
       text-align: center;
@@ -1744,8 +1744,8 @@
         </p>
 
         <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:28px;">
-          <span data-lang="es">&#x1F4E9; Preguntas: <strong>Ezequiel Molina</strong> &amp; <strong>Carolina L&oacute;pez</strong></span>
-          <span data-lang="en">&#x1F4E9; Questions: <strong>Ezequiel Molina</strong> &amp; <strong>Carolina L&oacute;pez</strong></span>
+          <span data-lang="es"><i class="fas fa-envelope" style="color:var(--orange); margin-right:4px;"></i> Preguntas: <strong>Ezequiel Molina</strong> &amp; <strong>Carolina L&oacute;pez</strong></span>
+          <span data-lang="en"><i class="fas fa-envelope" style="color:var(--orange); margin-right:4px;"></i> Questions: <strong>Ezequiel Molina</strong> &amp; <strong>Carolina L&oacute;pez</strong></span>
         </p>
 
         <!-- External links row -->
@@ -1904,28 +1904,28 @@
       <!-- RIGHT: 4 constraint cards -->
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
         <div class="card" style="padding:16px 18px; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:6px;">&#x1F4D0;</div>
+          <div style="font-size:1.5rem; margin-bottom:8px; color:var(--orange);"><i class="fas fa-calculator"></i></div>
           <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.5; margin:0;">
             <span data-lang="es">Solo las horas de matem&aacute;ticas existentes</span>
             <span data-lang="en">Existing math hours only</span>
           </p>
         </div>
         <div class="card" style="padding:16px 18px; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:6px;">&#x1F469;&#x200D;&#x1F3EB;</div>
+          <div style="font-size:1.5rem; margin-bottom:8px; color:var(--orange);"><i class="fas fa-chalkboard-teacher"></i></div>
           <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.5; margin:0;">
             <span data-lang="es">Docentes regulares</span>
             <span data-lang="en">Regular teachers</span>
           </p>
         </div>
         <div class="card" style="padding:16px 18px; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:6px;">&#x1F5A5;</div>
+          <div style="font-size:1.5rem; margin-bottom:8px; color:var(--orange);"><i class="fas fa-desktop"></i></div>
           <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.5; margin:0;">
             <span data-lang="es">Laboratorios de c&oacute;mputo escolares</span>
             <span data-lang="en">School computer labs</span>
           </p>
         </div>
         <div class="card" style="padding:16px 18px; text-align:center;">
-          <div style="font-size:1.5rem; margin-bottom:6px;">&#x1F465;</div>
+          <div style="font-size:1.5rem; margin-bottom:8px; color:var(--orange);"><i class="fas fa-users"></i></div>
           <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.5; margin:0;">
             <span data-lang="es">Ratio 1:30 estudiantes</span>
             <span data-lang="en">1:30 student ratio</span>
@@ -2567,6 +2567,98 @@
     </div>
 
     <!-- ============================================================
+         THE SCIENCE OF LEARNING — Why This Approach Works
+         ============================================================ -->
+    <div class="accordion">
+      <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+        <span>
+          <i class="fas fa-brain" style="color:var(--teal); margin-right:8px;"></i>
+          <span data-lang="es">La Ciencia del Aprendizaje: Por Qu&eacute; Funciona Este Enfoque</span>
+          <span data-lang="en">The Science of Learning: Why This Approach Works</span>
+        </span>
+        <i class="fas fa-chevron-down chevron"></i>
+      </div>
+      <div class="accordion-content">
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7; margin-bottom:20px;">
+          <span data-lang="es">Nuestro tutor IA no es un chatbot que responde preguntas. Est&aacute; construido sobre 5 principios de la ciencia cognitiva que tienen d&eacute;cadas de evidencia experimental:</span>
+          <span data-lang="en">Our AI tutor isn't a chatbot that answers questions. It's built on 5 cognitive science principles backed by decades of experimental evidence:</span>
+        </p>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:16px; margin-bottom:20px;">
+
+          <div class="card" style="padding:18px; border-left:3px solid var(--teal);">
+            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.9rem; color:var(--teal); margin-bottom:6px;">
+              <i class="fas fa-redo-alt" style="margin-right:6px;"></i>
+              <span data-lang="es">Pr&aacute;ctica de Recuperaci&oacute;n</span>
+              <span data-lang="en">Retrieval Practice</span>
+            </h4>
+            <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.6; margin:0;">
+              <span data-lang="es">Responder preguntas fortalece la memoria m&aacute;s que releer. Cada pregunta es un acto de aprendizaje, no solo de evaluaci&oacute;n. <em>(Roediger &amp; Butler, 2011)</em></span>
+              <span data-lang="en">Answering questions strengthens memory more than re-reading. Each question is an act of learning, not just assessment. <em>(Roediger &amp; Butler, 2011)</em></span>
+            </p>
+          </div>
+
+          <div class="card" style="padding:18px; border-left:3px solid var(--orange);">
+            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.9rem; color:var(--orange); margin-bottom:6px;">
+              <i class="fas fa-crosshairs" style="margin-right:6px;"></i>
+              <span data-lang="es">Preguntas Diagn&oacute;sticas</span>
+              <span data-lang="en">Diagnostic Questions</span>
+            </h4>
+            <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.6; margin:0;">
+              <span data-lang="es">No basta saber si la respuesta es correcta. Cada distractor revela una concepci&oacute;n err&oacute;nea espec&iacute;fica, permitiendo remediaci&oacute;n precisa. <em>(Craig Barton / Eedi)</em></span>
+              <span data-lang="en">Knowing if the answer is right isn't enough. Each distractor reveals a specific misconception, enabling precise remediation. <em>(Craig Barton / Eedi)</em></span>
+            </p>
+          </div>
+
+          <div class="card" style="padding:18px; border-left:3px solid var(--wb-blue);">
+            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.9rem; color:var(--wb-blue); margin-bottom:6px;">
+              <i class="fas fa-clock" style="margin-right:6px;"></i>
+              <span data-lang="es">Pr&aacute;ctica Espaciada</span>
+              <span data-lang="en">Spaced Practice</span>
+            </h4>
+            <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.6; margin:0;">
+              <span data-lang="es">Distribuir la pr&aacute;ctica en sesiones regulares (no concentrarla) mejora la retenci&oacute;n a largo plazo. El tutor repite subtemas seg&uacute;n el desempe&ntilde;o. <em>(Cepeda et al., 2006)</em></span>
+              <span data-lang="en">Distributing practice across regular sessions (not cramming) improves long-term retention. The tutor revisits subtopics based on performance. <em>(Cepeda et al., 2006)</em></span>
+            </p>
+          </div>
+
+          <div class="card" style="padding:18px; border-left:3px solid #D4A843;">
+            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.9rem; color:#D4A843; margin-bottom:6px;">
+              <i class="fas fa-comment-dots" style="margin-right:6px;"></i>
+              <span data-lang="es">Retroalimentaci&oacute;n Inmediata y Formativa</span>
+              <span data-lang="en">Immediate Formative Feedback</span>
+            </h4>
+            <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.6; margin:0;">
+              <span data-lang="es">Cuando el estudiante se equivoca, no recibe solo &ldquo;incorrecto&rdquo; sino una pregunta socr&aacute;tica que lo gu&iacute;a al error conceptual. d=0.73 en meta-an&aacute;lisis. <em>(Hattie &amp; Timperley, 2007)</em></span>
+              <span data-lang="en">When students err, they don't just get "incorrect" but a Socratic question guiding them to the conceptual error. d=0.73 in meta-analyses. <em>(Hattie &amp; Timperley, 2007)</em></span>
+            </p>
+          </div>
+
+          <div class="card" style="padding:18px; border-left:3px solid var(--dark);">
+            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.9rem; color:var(--dark); margin-bottom:6px;">
+              <i class="fas fa-mountain" style="margin-right:6px;"></i>
+              <span data-lang="es">Dificultades Deseables</span>
+              <span data-lang="en">Desirable Difficulties</span>
+            </h4>
+            <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.6; margin:0;">
+              <span data-lang="es">Esforzarse productivamente fortalece el aprendizaje. El tutor ajusta la dificultad en 3 niveles: precondici&oacute;n &rarr; intermedio &rarr; avanzado. <em>(Bjork, 1994)</em></span>
+              <span data-lang="en">Productive struggle strengthens learning. The tutor adjusts difficulty across 3 tiers: prerequisite &rarr; intermediate &rarr; advanced. <em>(Bjork, 1994)</em></span>
+            </p>
+          </div>
+
+        </div>
+
+        <div style="background:var(--teal-light); border-radius:var(--radius-sm); padding:14px 20px; border-left:4px solid var(--teal);">
+          <p style="font-size:0.88rem; color:var(--text); line-height:1.6; margin:0;">
+            <i class="fas fa-lightbulb" style="color:var(--teal); margin-right:6px;"></i>
+            <span data-lang="es"><strong>El principio clave:</strong> La IA no reemplaza al docente &mdash; automatiza la pr&aacute;ctica adaptativa mientras el docente observa datos en tiempo real y ense&ntilde;a lo que la m&aacute;quina no puede: motivaci&oacute;n, contexto y conexi&oacute;n humana.</span>
+            <span data-lang="en"><strong>The key principle:</strong> AI doesn't replace the teacher &mdash; it automates adaptive practice while the teacher observes real-time data and teaches what the machine cannot: motivation, context, and human connection.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
          NOT ALL AI TUTORS ARE EQUAL (from Beamer — KEY INSIGHT)
          ============================================================ -->
     <div style="text-align:center; margin-bottom:8px;">
@@ -2575,8 +2667,8 @@
         <span data-lang="en">Not All AI Tutors Are Equal</span>
       </h3>
       <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:24px; max-width:700px; margin-left:auto; margin-right:auto;">
-        <span data-lang="es">Construimos un marco de evaluaci&oacute;n de 100 puntos basado en ciencia del aprendizaje</span>
-        <span data-lang="en">We built a 100-point evaluation framework grounded in learning science</span>
+        <span data-lang="es">Construimos un marco de evaluaci&oacute;n de 100 puntos basado en estos principios</span>
+        <span data-lang="en">We built a 100-point evaluation framework grounded in these principles</span>
       </p>
     </div>
 
@@ -2670,9 +2762,9 @@
     <!-- Removed duplicate "4 principles" section — content already covered in comparison chart above -->
 
     <!-- ============================================================
-         ACCORDION: SOMA Model (open by default)
+         ACCORDION: 5-Moment Model (open by default)
          ============================================================ -->
-    <div class="accordion open">
+    <div class="accordion">
       <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
         <span>
           <i class="fas fa-sitemap" style="color:var(--orange); margin-right:8px;"></i>
@@ -3001,13 +3093,13 @@
               <span style="color:var(--white); font-weight:700; font-size:0.8rem;">2</span>
             </div>
             <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.95rem;">
-              <span data-lang="es">Modelo SOMA en la Pr&aacute;ctica</span>
-              <span data-lang="en">SOMA Model in Practice</span>
+              <span data-lang="es">Modelo de 5 Momentos en la Pr&aacute;ctica</span>
+              <span data-lang="en">5-Moment Model in Practice</span>
             </h4>
           </div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6; margin-left:44px;">
-            <span data-lang="es">Las 3 fases (S-O/M-A) en detalle. Pr&aacute;ctica guiada con simulaciones. C&oacute;mo usar el dashboard en tiempo real.</span>
-            <span data-lang="en">The 3 phases (S-O/M-A) in detail. Guided practice with simulations. How to use the real-time dashboard.</span>
+            <span data-lang="es">Los 5 momentos de la sesi&oacute;n en detalle. Pr&aacute;ctica guiada con simulaciones. C&oacute;mo usar el dashboard en tiempo real.</span>
+            <span data-lang="en">The 5 session moments in detail. Guided practice with simulations. How to use the real-time dashboard.</span>
           </p>
         </div>
 
@@ -3057,8 +3149,8 @@
             </h4>
           </div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6; margin-left:44px;">
-            <span data-lang="es">Planificar las sesiones SOMA para el a&ntilde;o escolar. Integrar con la programaci&oacute;n curricular existente. Estrategias para mantener el programa m&aacute;s all&aacute; del piloto.</span>
-            <span data-lang="en">Plan SOMA sessions for the school year. Integrate with existing curriculum programming. Strategies to sustain the program beyond the pilot.</span>
+            <span data-lang="es">Planificar las sesiones con IA para el a&ntilde;o escolar. Integrar con la programaci&oacute;n curricular existente. Estrategias para mantener el programa m&aacute;s all&aacute; del piloto.</span>
+            <span data-lang="en">Plan AI sessions for the school year. Integrate with existing curriculum programming. Strategies to sustain the program beyond the pilot.</span>
           </p>
         </div>
 
@@ -3074,8 +3166,8 @@
                 <span data-lang="en">Final Assessment</span>
               </h4>
               <p style="font-size:0.82rem; color:rgba(255,255,255,0.6); margin:0;">
-                <span data-lang="es">Evaluaci&oacute;n pr&aacute;ctica: planificar y simular una sesi&oacute;n SOMA completa. Certificaci&oacute;n UPC al aprobar.</span>
-                <span data-lang="en">Practical assessment: plan and simulate a complete SOMA session. UPC certification upon passing.</span>
+                <span data-lang="es">Evaluaci&oacute;n pr&aacute;ctica: planificar y simular una sesi&oacute;n completa con el modelo de 5 momentos. Certificaci&oacute;n UPC al aprobar.</span>
+                <span data-lang="en">Practical assessment: plan and simulate a complete 5-moment session. UPC certification upon passing.</span>
               </p>
             </div>
           </div>
@@ -3106,8 +3198,8 @@
         </p>
         <p style="font-size:0.88rem; margin:0; padding:4px 0;">
           <i class="fas fa-check-circle" style="color:var(--teal); margin-right:6px; font-size:0.75rem;"></i>
-          <span data-lang="es">Modelo pedag&oacute;gico de sesi&oacute;n (ej. SOMA)</span>
-          <span data-lang="en">Session pedagogical model (e.g. SOMA)</span>
+          <span data-lang="es">Modelo pedag&oacute;gico de sesi&oacute;n (Modelo de 5 Momentos)</span>
+          <span data-lang="en">Session pedagogical model (5-Moment Model)</span>
         </p>
         <p style="font-size:0.88rem; margin:0; padding:4px 0;">
           <i class="fas fa-check-circle" style="color:var(--teal); margin-right:6px; font-size:0.75rem;"></i>
@@ -3149,8 +3241,8 @@
         </a>
         <a href="javascript:void(0)" style="display:flex; align-items:center; gap:8px; padding:5px 0; font-size:0.88rem; color:var(--orange); font-weight:500; transition:color 0.2s;">
           <i class="fas fa-file-alt" style="font-size:0.78rem;"></i>
-          <span data-lang="es">Gu&iacute;a del Modelo SOMA</span>
-          <span data-lang="en">SOMA Model Guide</span>
+          <span data-lang="es">Gu&iacute;a del Modelo de 5 Momentos</span>
+          <span data-lang="en">5-Moment Model Guide</span>
         </a>
         <a href="https://drive.google.com/drive/folders/1RknhY4YcTpk2WxaWwoy-F_2-r9PmQoOm" target="_blank" style="display:flex; align-items:center; gap:8px; padding:5px 0; font-size:0.88rem; color:var(--orange); font-weight:500; transition:color 0.2s;">
           <i class="fas fa-folder" style="font-size:0.78rem;"></i>
@@ -3217,7 +3309,7 @@
   </div>
 
   <!-- 8-Step Journey -->
-  <div class="accordion open">
+  <div class="accordion">
     <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
       <span><span data-lang="es">Recorrido del Estudiante (8 Pasos)</span><span data-lang="en">Student Journey (8 Steps)</span></span>
       <i class="fas fa-chevron-down chevron"></i>
@@ -3447,7 +3539,7 @@
   </div>
 
   <!-- The Core Theory -->
-  <div class="accordion open">
+  <div class="accordion">
     <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
       <span>
         <i class="fas fa-brain" style="color:var(--wb-blue); margin-right:8px;"></i>
@@ -3497,7 +3589,7 @@
   </div>
 
   <!-- RCT 3-arm design -->
-  <div class="accordion open">
+  <div class="accordion">
     <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
       <span>
         <i class="fas fa-flask" style="color:var(--wb-blue); margin-right:8px;"></i>
