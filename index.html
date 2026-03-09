@@ -3106,161 +3106,6 @@
     </div>
 
     <!-- ============================================================
-         AI Methodology: How We Built the Question Bank
-         ============================================================ -->
-    <div class="accordion" style="margin-top:16px;">
-      <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-        <span class="accordion-icon"><i class="fas fa-wand-magic-sparkles" style="color:var(--orange);"></i></span>
-        <h3 style="flex:1">
-          <span data-lang="es">Metodolog&iacute;a IA: C&oacute;mo Construimos el Banco de Preguntas</span>
-          <span data-lang="en">AI Methodology: How We Built the Question Bank</span>
-        </h3>
-        <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
-      </div>
-      <div class="accordion-content">
-        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
-          <span data-lang="es">El activo m&aacute;s replicable del programa son los documentos <strong style="color:var(--dark);">SKILL</strong> &mdash; especificaciones detalladas que documentan c&oacute;mo usar IA (Claude) para generar preguntas diagn&oacute;sticas. Ning&uacute;n otro proyecto EdTech ha documentado esta metodolog&iacute;a. Los replicadores pueden usarlos directamente para generar bancos de preguntas para <em>cualquier</em> curr&iacute;culo.</span>
-          <span data-lang="en">The program's most replicable asset are the <strong style="color:var(--dark);">SKILL</strong> documents &mdash; detailed specifications documenting how to use AI (Claude) to generate diagnostic questions. No other EdTech project has documented this methodology. Replicators can use them directly to generate question banks for <em>any</em> curriculum.</span>
-        </p>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px;">
-          <div style="background:var(--orange-light); border-radius:var(--radius-sm); padding:20px; border-left:4px solid var(--orange);">
-            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.92rem; color:var(--orange); margin-bottom:8px;">
-              <i class="fas fa-file-code" style="margin-right:6px;"></i>
-              SKILL: Diagnostic Assessments
-            </h4>
-            <ul style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
-              <li style="padding:2px 0;"><span data-lang="es">Pipeline de 6 pasos para dise&ntilde;ar preguntas</span><span data-lang="en">6-step question design pipeline</span></li>
-              <li style="padding:2px 0;"><span data-lang="es">5 Reglas de Oro para distractores</span><span data-lang="en">5 Golden Rules for distractors</span></li>
-              <li style="padding:2px 0;"><span data-lang="es">Estructura de dificultad de 3 niveles</span><span data-lang="en">3-Tier difficulty structure</span></li>
-              <li style="padding:2px 0;"><span data-lang="es">Formato de salida Excel especificado</span><span data-lang="en">Specified Excel output format</span></li>
-            </ul>
-          </div>
-          <div style="background:var(--teal-light); border-radius:var(--radius-sm); padding:20px; border-left:4px solid var(--teal);">
-            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.92rem; color:var(--teal); margin-bottom:8px;">
-              <i class="fas fa-file-code" style="margin-right:6px;"></i>
-              SKILL: Math Pedagogy Analysis
-            </h4>
-            <ul style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
-              <li style="padding:2px 0;"><span data-lang="es">Marco de an&aacute;lisis de 7 dimensiones</span><span data-lang="en">7-dimension analysis framework</span></li>
-              <li style="padding:2px 0;"><span data-lang="es">Ingenier&iacute;a de distractores por concepciones err&oacute;neas</span><span data-lang="en">Misconception-based distractor engineering</span></li>
-              <li style="padding:2px 0;"><span data-lang="es">Remediaci&oacute;n socr&aacute;tica automatizada</span><span data-lang="en">Automated Socratic remediation</span></li>
-              <li style="padding:2px 0;"><span data-lang="es">Etiquetado curricular CNEB</span><span data-lang="en">CNEB curriculum tagging</span></li>
-            </ul>
-          </div>
-        </div>
-        <p style="font-size:0.82rem; background:var(--dark); color:rgba(255,255,255,0.8); border-radius:var(--radius-sm); padding:14px 18px; margin:0;">
-          <i class="fas fa-lightbulb" style="color:var(--orange); margin-right:8px;"></i>
-          <span data-lang="es"><strong style="color:white;">Para replicadores:</strong> Con estos SKILL + un LLM (Claude, GPT-4) + el curr&iacute;culo de su pa&iacute;s, pueden generar un banco de preguntas diagn&oacute;sticas completo en semanas, no meses.</span>
-          <span data-lang="en"><strong style="color:white;">For replicators:</strong> With these SKILLs + an LLM (Claude, GPT-4) + your country's curriculum, you can generate a complete diagnostic question bank in weeks, not months.</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- ============================================================
-         Quality Assurance Pipeline
-         ============================================================ -->
-    <div class="accordion" style="margin-top:16px;">
-      <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-        <span class="accordion-icon"><i class="fas fa-shield-check" style="color:var(--green);"></i></span>
-        <h3 style="flex:1">
-          <span data-lang="es">Pipeline de Aseguramiento de Calidad</span>
-          <span data-lang="en">Quality Assurance Pipeline</span>
-        </h3>
-        <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
-      </div>
-      <div class="accordion-content">
-        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
-          <span data-lang="es">Cada pregunta pas&oacute; por un pipeline riguroso de 5 etapas antes de llegar a los estudiantes:</span>
-          <span data-lang="en">Every question went through a rigorous 5-stage pipeline before reaching students:</span>
-        </p>
-        <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:20px;">
-          <div style="display:flex; align-items:center; gap:14px; background:var(--orange-light); border-radius:var(--radius-sm); padding:14px 18px;">
-            <div style="width:32px; height:32px; border-radius:50%; background:var(--orange); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
-            <div>
-              <strong style="font-size:0.88rem;"><span data-lang="es">Generaci&oacute;n con IA</span><span data-lang="en">AI Generation</span></strong>
-              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Claude genera preguntas usando documentos SKILL</span><span data-lang="en">Claude generates questions using SKILL documents</span></p>
-            </div>
-          </div>
-          <div style="display:flex; align-items:center; gap:14px; background:var(--wb-blue-light); border-radius:var(--radius-sm); padding:14px 18px;">
-            <div style="width:32px; height:32px; border-radius:50%; background:var(--wb-blue); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
-            <div>
-              <strong style="font-size:0.88rem;"><span data-lang="es">Revisi&oacute;n Experta (22 horas)</span><span data-lang="en">Expert Review (22 hours)</span></strong>
-              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Javier Trigoso revis&oacute; cada pregunta en profundidad</span><span data-lang="en">Javier Trigoso reviewed each question in depth</span></p>
-            </div>
-          </div>
-          <div style="display:flex; align-items:center; gap:14px; background:var(--teal-light); border-radius:var(--radius-sm); padding:14px 18px;">
-            <div style="width:32px; height:32px; border-radius:50%; background:var(--teal); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
-            <div>
-              <strong style="font-size:0.88rem;"><span data-lang="es">QA Spot Check — 94.9% aprobaci&oacute;n</span><span data-lang="en">QA Spot Check — 94.9% pass rate</span></strong>
-              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Muestreo: 16 archivos &times; 3 preguntas, 4 categor&iacute;as de criterios</span><span data-lang="en">Sampling: 16 files &times; 3 questions, 4 criteria categories</span></p>
-            </div>
-          </div>
-          <div style="display:flex; align-items:center; gap:14px; background:#F3E8FF; border-radius:var(--radius-sm); padding:14px 18px;">
-            <div style="width:32px; height:32px; border-radius:50%; background:#7C3AED; color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
-            <div>
-              <strong style="font-size:0.88rem;"><span data-lang="es">Panel Internacional: Barton &times; Hendrick</span><span data-lang="en">International Panel: Barton &times; Hendrick</span></strong>
-              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Craig Barton y Carl Hendrick revisaron 395 preguntas ED</span><span data-lang="en">Craig Barton & Carl Hendrick reviewed 395 ED questions</span></p>
-            </div>
-          </div>
-          <div style="display:flex; align-items:center; gap:14px; background:#ECFDF5; border-radius:var(--radius-sm); padding:14px 18px;">
-            <div style="width:32px; height:32px; border-radius:50%; background:var(--green); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">5</div>
-            <div>
-              <strong style="font-size:0.88rem;"><span data-lang="es">Correcciones y Entrega Final</span><span data-lang="en">Corrections & Final Delivery</span></strong>
-              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">198 archivos Excel = 5,940 preguntas listas para uso</span><span data-lang="en">198 Excel files = 5,940 questions ready for use</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================================
-         Safeguarding & AI Ethics
-         ============================================================ -->
-    <div class="accordion" style="margin-top:16px;">
-      <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-        <span class="accordion-icon"><i class="fas fa-shield-alt" style="color:#DC2626;"></i></span>
-        <h3 style="flex:1">
-          <span data-lang="es">Protocolo de Protecci&oacute;n: Riesgos IA con Menores</span>
-          <span data-lang="en">Safeguarding Protocol: AI Risks with Minors</span>
-        </h3>
-        <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
-      </div>
-      <div class="accordion-content">
-        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:16px;">
-          <span data-lang="es">Cualquier pa&iacute;s que replique herramientas de IA con menores necesita un protocolo expl&iacute;cito de riesgos. EMC desarroll&oacute; con DRELM/MINEDU la <strong style="color:var(--dark);">&ldquo;Ruta de Acci&oacute;n frente a Riesgos en la Interacci&oacute;n con IA&rdquo;</strong>, un marco de 5 fases:</span>
-          <span data-lang="en">Any country replicating AI tools with minors needs an explicit risk protocol. EMC developed with DRELM/MINEDU the <strong style="color:var(--dark);">&ldquo;AI Interaction Risk Action Route&rdquo;</strong>, a 5-phase framework:</span>
-        </p>
-        <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:8px; margin-bottom:16px;">
-          <div style="text-align:center; padding:12px 8px; background:#FEF2F2; border-radius:var(--radius-sm);">
-            <i class="fas fa-clipboard-list" style="color:#DC2626; font-size:1.1rem; margin-bottom:6px; display:block;"></i>
-            <p style="font-size:0.72rem; font-weight:600; color:#DC2626; margin:0;"><span data-lang="es">Preparaci&oacute;n</span><span data-lang="en">Preparation</span></p>
-          </div>
-          <div style="text-align:center; padding:12px 8px; background:var(--orange-light); border-radius:var(--radius-sm);">
-            <i class="fas fa-play-circle" style="color:var(--orange); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
-            <p style="font-size:0.72rem; font-weight:600; color:var(--orange); margin:0;"><span data-lang="es">Implementaci&oacute;n</span><span data-lang="en">Implementation</span></p>
-          </div>
-          <div style="text-align:center; padding:12px 8px; background:var(--wb-blue-light); border-radius:var(--radius-sm);">
-            <i class="fas fa-search" style="color:var(--wb-blue); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
-            <p style="font-size:0.72rem; font-weight:600; color:var(--wb-blue); margin:0;"><span data-lang="es">Detecci&oacute;n</span><span data-lang="en">Detection</span></p>
-          </div>
-          <div style="text-align:center; padding:12px 8px; background:#F3E8FF; border-radius:var(--radius-sm);">
-            <i class="fas fa-flag" style="color:#7C3AED; font-size:1.1rem; margin-bottom:6px; display:block;"></i>
-            <p style="font-size:0.72rem; font-weight:600; color:#7C3AED; margin:0;"><span data-lang="es">Reporte</span><span data-lang="en">Reporting</span></p>
-          </div>
-          <div style="text-align:center; padding:12px 8px; background:#ECFDF5; border-radius:var(--radius-sm);">
-            <i class="fas fa-hands-helping" style="color:var(--green); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
-            <p style="font-size:0.72rem; font-weight:600; color:var(--green); margin:0;"><span data-lang="es">Seguimiento</span><span data-lang="en">Follow-up</span></p>
-          </div>
-        </div>
-        <p style="font-size:0.82rem; background:#FEF2F2; border-left:4px solid #DC2626; border-radius:var(--radius-sm); padding:14px 18px; color:var(--text-muted); margin:0;">
-          <i class="fas fa-exclamation-triangle" style="color:#DC2626; margin-right:8px;"></i>
-          <span data-lang="es"><strong style="color:var(--dark);">Esencial para replicadores:</strong> Cubre violencia, ideaci&oacute;n suicida, abuso de sustancias y otros indicadores de riesgo. Incluye roles claros, tiempos y referencias legales. Disponible en la Biblioteca de Documentos.</span>
-          <span data-lang="en"><strong style="color:var(--dark);">Essential for replicators:</strong> Covers violence, suicidal ideation, substance abuse and other risk indicators. Includes clear roles, timelines, and legal references. Available in the Document Library.</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- ============================================================
          CALLOUT: Para Replicar (Tutor IA)
          ============================================================ -->
     <div class="callout callout-replicate" style="margin-top:32px;">
@@ -3511,22 +3356,48 @@
     </div>
   </div>
 
-  <!-- OV Tutor Training -->
+  <!-- Safeguarding Protocol -->
   <div class="accordion">
     <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-      <span><span data-lang="es">Capacitación: Tutores OV (~160)</span><span data-lang="en">Training: OV Tutors (~160)</span></span>
+      <span>
+        <i class="fas fa-shield-alt" style="color:#DC2626; margin-right:8px;"></i>
+        <span data-lang="es">Protocolo de Protecci&oacute;n: Riesgos IA con Menores</span>
+        <span data-lang="en">Safeguarding Protocol: AI Risks with Minors</span>
+      </span>
       <i class="fas fa-chevron-down chevron"></i>
     </div>
     <div class="accordion-content">
-      <p style="background:var(--teal-light);padding:12px 16px;border-radius:8px;margin-bottom:16px"><strong data-lang="es">14 horas en 2 días (marzo 9-10, 2026). Certificación UPC + DRELM.</strong><strong data-lang="en">14 hours over 2 days (March 9-10, 2026). UPC + DRELM certification.</strong></p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
-        <div class="card" style="padding:16px 18px"><strong style="color:var(--orange)">M1:</strong> <span data-lang="es">Bienvenida y Contexto</span><span data-lang="en">Welcome &amp; Context</span></div>
-        <div class="card" style="padding:16px 18px"><strong style="color:var(--orange)">M2:</strong> <span data-lang="es">Alfabetización IA</span><span data-lang="en">AI Literacy</span></div>
-        <div class="card" style="padding:16px 18px"><strong style="color:var(--orange)">M3:</strong> <span data-lang="es">El Programa EMC</span><span data-lang="en">The EMC Program</span></div>
-        <div class="card" style="padding:16px 18px"><strong style="color:var(--orange)">M4:</strong> <span data-lang="es">Herramientas y Plataforma</span><span data-lang="en">Tools &amp; Platform</span></div>
-        <div class="card" style="padding:16px 18px"><strong style="color:var(--orange)">M5:</strong> <span data-lang="es">Práctica y Fricción</span><span data-lang="en">Practice &amp; Friction</span></div>
-        <div class="card" style="padding:16px 18px"><strong style="color:var(--orange)">M6:</strong> <span data-lang="es">Compromiso y Cierre</span><span data-lang="en">Commitment &amp; Closing</span></div>
+      <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:16px;">
+        <span data-lang="es">Cualquier pa&iacute;s que replique herramientas de IA con menores necesita un protocolo expl&iacute;cito de riesgos. EMC desarroll&oacute; con DRELM/MINEDU la <strong style="color:var(--dark);">&ldquo;Ruta de Acci&oacute;n frente a Riesgos en la Interacci&oacute;n con IA&rdquo;</strong>, un marco de 5 fases:</span>
+        <span data-lang="en">Any country replicating AI tools with minors needs an explicit risk protocol. EMC developed with DRELM/MINEDU the <strong style="color:var(--dark);">&ldquo;AI Interaction Risk Action Route&rdquo;</strong>, a 5-phase framework:</span>
+      </p>
+      <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:8px; margin-bottom:16px;">
+        <div style="text-align:center; padding:12px 8px; background:#FEF2F2; border-radius:var(--radius-sm);">
+          <i class="fas fa-clipboard-list" style="color:#DC2626; font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+          <p style="font-size:0.72rem; font-weight:600; color:#DC2626; margin:0;"><span data-lang="es">Preparaci&oacute;n</span><span data-lang="en">Preparation</span></p>
+        </div>
+        <div style="text-align:center; padding:12px 8px; background:var(--orange-light); border-radius:var(--radius-sm);">
+          <i class="fas fa-play-circle" style="color:var(--orange); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+          <p style="font-size:0.72rem; font-weight:600; color:var(--orange); margin:0;"><span data-lang="es">Implementaci&oacute;n</span><span data-lang="en">Implementation</span></p>
+        </div>
+        <div style="text-align:center; padding:12px 8px; background:var(--wb-blue-light); border-radius:var(--radius-sm);">
+          <i class="fas fa-search" style="color:var(--wb-blue); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+          <p style="font-size:0.72rem; font-weight:600; color:var(--wb-blue); margin:0;"><span data-lang="es">Detecci&oacute;n</span><span data-lang="en">Detection</span></p>
+        </div>
+        <div style="text-align:center; padding:12px 8px; background:#F3E8FF; border-radius:var(--radius-sm);">
+          <i class="fas fa-flag" style="color:#7C3AED; font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+          <p style="font-size:0.72rem; font-weight:600; color:#7C3AED; margin:0;"><span data-lang="es">Reporte</span><span data-lang="en">Reporting</span></p>
+        </div>
+        <div style="text-align:center; padding:12px 8px; background:#ECFDF5; border-radius:var(--radius-sm);">
+          <i class="fas fa-hands-helping" style="color:var(--green); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+          <p style="font-size:0.72rem; font-weight:600; color:var(--green); margin:0;"><span data-lang="es">Seguimiento</span><span data-lang="en">Follow-up</span></p>
+        </div>
       </div>
+      <p style="font-size:0.82rem; background:#FEF2F2; border-left:4px solid #DC2626; border-radius:var(--radius-sm); padding:14px 18px; color:var(--text-muted); margin:0;">
+        <i class="fas fa-exclamation-triangle" style="color:#DC2626; margin-right:8px;"></i>
+        <span data-lang="es"><strong style="color:var(--dark);">Esencial para replicadores:</strong> Cubre violencia, ideaci&oacute;n suicida, abuso de sustancias y otros indicadores de riesgo. Incluye roles claros, tiempos y referencias legales. Disponible en la Biblioteca de Documentos.</span>
+        <span data-lang="en"><strong style="color:var(--dark);">Essential for replicators:</strong> Covers violence, suicidal ideation, substance abuse and other risk indicators. Includes clear roles, timelines, and legal references. Available in the Document Library.</span>
+      </p>
     </div>
   </div>
 
