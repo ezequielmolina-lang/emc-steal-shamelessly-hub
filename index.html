@@ -18,7 +18,7 @@
        CSS DESIGN SYSTEM v2 — Eligiendo Mi Camino Knowledge Hub
        ============================================================ */
 
-    /* ----- Custom Properties — Light Theme (eligiendomicamino.org inspired) ----- */
+    /* ----- Custom Properties — Light Theme (eligiendomicamino.com inspired) ----- */
     :root {
       --orange: #F57B21;
       --orange-light: #FFF8F0;
@@ -1802,14 +1802,14 @@
         </div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">6,600</div>
+        <div class="stat-number">~6,000</div>
         <div class="stat-label">
           <span data-lang="es">Estudiantes</span>
           <span data-lang="en">Students</span>
         </div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">~4,000</div>
+        <div class="stat-number">5,940</div>
         <div class="stat-label">
           <span data-lang="es">Preguntas Diagn&oacute;sticas</span>
           <span data-lang="en">Diagnostic Questions</span>
@@ -2897,17 +2897,17 @@
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">~4,000</div>
+            <div class="stat-number">5,940</div>
             <div class="stat-label">
               <span data-lang="es">Preguntas</span>
               <span data-lang="en">Questions</span>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">~50</div>
+            <div class="stat-number">198</div>
             <div class="stat-label">
-              <span data-lang="es">Por subtema</span>
-              <span data-lang="en">Per subtopic</span>
+              <span data-lang="es">Archivos Excel</span>
+              <span data-lang="en">Excel Files</span>
             </div>
           </div>
           <div class="stat-card">
@@ -3011,8 +3011,8 @@
             </div>
             <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-sm); padding:16px;">
               <p style="font-size:0.85rem; color:rgba(255,255,255,0.75); line-height:1.6; margin:0;">
-                <span data-lang="es"><strong style="color:var(--teal);">Nuestro enfoque:</strong> Adaptamos este modelo al curr&iacute;culo peruano de 5&deg; de secundaria. ~4,000 preguntas mapeadas a concepciones err&oacute;neas locales, generadas con IA y validadas por expertos.</span>
-                <span data-lang="en"><strong style="color:var(--teal);">Our approach:</strong> We adapted this model to Peru's 5th-year secondary curriculum. ~4,000 questions mapped to local misconceptions, AI-generated and expert-validated.</span>
+                <span data-lang="es"><strong style="color:var(--teal);">Nuestro enfoque:</strong> Adaptamos este modelo al curr&iacute;culo peruano de 5&deg; de secundaria. 5,940 preguntas mapeadas a concepciones err&oacute;neas locales, generadas con IA y validadas por expertos.</span>
+                <span data-lang="en"><strong style="color:var(--teal);">Our approach:</strong> We adapted this model to Peru's 5th-year secondary curriculum. 5,940 questions mapped to local misconceptions, AI-generated and expert-validated.</span>
               </p>
             </div>
           </div>
@@ -3176,6 +3176,161 @@
           </div>
         </div>
 
+      </div>
+    </div>
+
+    <!-- ============================================================
+         AI Methodology: How We Built the Question Bank
+         ============================================================ -->
+    <div class="accordion" style="margin-top:16px;">
+      <div class="accordion-header">
+        <span class="accordion-icon"><i class="fas fa-wand-magic-sparkles" style="color:var(--orange);"></i></span>
+        <h3 style="flex:1">
+          <span data-lang="es">Metodolog&iacute;a IA: C&oacute;mo Construimos el Banco de Preguntas</span>
+          <span data-lang="en">AI Methodology: How We Built the Question Bank</span>
+        </h3>
+        <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="accordion-content">
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
+          <span data-lang="es">El activo m&aacute;s replicable del programa son los documentos <strong style="color:var(--dark);">SKILL</strong> &mdash; especificaciones detalladas que documentan c&oacute;mo usar IA (Claude) para generar preguntas diagn&oacute;sticas. Ning&uacute;n otro proyecto EdTech ha documentado esta metodolog&iacute;a. Los replicadores pueden usarlos directamente para generar bancos de preguntas para <em>cualquier</em> curr&iacute;culo.</span>
+          <span data-lang="en">The program's most replicable asset are the <strong style="color:var(--dark);">SKILL</strong> documents &mdash; detailed specifications documenting how to use AI (Claude) to generate diagnostic questions. No other EdTech project has documented this methodology. Replicators can use them directly to generate question banks for <em>any</em> curriculum.</span>
+        </p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px;">
+          <div style="background:var(--orange-light); border-radius:var(--radius-sm); padding:20px; border-left:4px solid var(--orange);">
+            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.92rem; color:var(--orange); margin-bottom:8px;">
+              <i class="fas fa-file-code" style="margin-right:6px;"></i>
+              SKILL: Diagnostic Assessments
+            </h4>
+            <ul style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+              <li style="padding:2px 0;"><span data-lang="es">Pipeline de 6 pasos para dise&ntilde;ar preguntas</span><span data-lang="en">6-step question design pipeline</span></li>
+              <li style="padding:2px 0;"><span data-lang="es">5 Reglas de Oro para distractores</span><span data-lang="en">5 Golden Rules for distractors</span></li>
+              <li style="padding:2px 0;"><span data-lang="es">Estructura de dificultad de 3 niveles</span><span data-lang="en">3-Tier difficulty structure</span></li>
+              <li style="padding:2px 0;"><span data-lang="es">Formato de salida Excel especificado</span><span data-lang="en">Specified Excel output format</span></li>
+            </ul>
+          </div>
+          <div style="background:var(--teal-light); border-radius:var(--radius-sm); padding:20px; border-left:4px solid var(--teal);">
+            <h4 style="font-family:var(--font-heading); font-weight:600; font-size:0.92rem; color:var(--teal); margin-bottom:8px;">
+              <i class="fas fa-file-code" style="margin-right:6px;"></i>
+              SKILL: Math Pedagogy Analysis
+            </h4>
+            <ul style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+              <li style="padding:2px 0;"><span data-lang="es">Marco de an&aacute;lisis de 7 dimensiones</span><span data-lang="en">7-dimension analysis framework</span></li>
+              <li style="padding:2px 0;"><span data-lang="es">Ingenier&iacute;a de distractores por concepciones err&oacute;neas</span><span data-lang="en">Misconception-based distractor engineering</span></li>
+              <li style="padding:2px 0;"><span data-lang="es">Remediaci&oacute;n socr&aacute;tica automatizada</span><span data-lang="en">Automated Socratic remediation</span></li>
+              <li style="padding:2px 0;"><span data-lang="es">Etiquetado curricular CNEB</span><span data-lang="en">CNEB curriculum tagging</span></li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:0.82rem; background:var(--dark); color:rgba(255,255,255,0.8); border-radius:var(--radius-sm); padding:14px 18px; margin:0;">
+          <i class="fas fa-lightbulb" style="color:var(--orange); margin-right:8px;"></i>
+          <span data-lang="es"><strong style="color:white;">Para replicadores:</strong> Con estos SKILL + un LLM (Claude, GPT-4) + el curr&iacute;culo de su pa&iacute;s, pueden generar un banco de preguntas diagn&oacute;sticas completo en semanas, no meses.</span>
+          <span data-lang="en"><strong style="color:white;">For replicators:</strong> With these SKILLs + an LLM (Claude, GPT-4) + your country's curriculum, you can generate a complete diagnostic question bank in weeks, not months.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         Quality Assurance Pipeline
+         ============================================================ -->
+    <div class="accordion" style="margin-top:16px;">
+      <div class="accordion-header">
+        <span class="accordion-icon"><i class="fas fa-shield-check" style="color:var(--green);"></i></span>
+        <h3 style="flex:1">
+          <span data-lang="es">Pipeline de Aseguramiento de Calidad</span>
+          <span data-lang="en">Quality Assurance Pipeline</span>
+        </h3>
+        <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="accordion-content">
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
+          <span data-lang="es">Cada pregunta pas&oacute; por un pipeline riguroso de 5 etapas antes de llegar a los estudiantes:</span>
+          <span data-lang="en">Every question went through a rigorous 5-stage pipeline before reaching students:</span>
+        </p>
+        <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:20px;">
+          <div style="display:flex; align-items:center; gap:14px; background:var(--orange-light); border-radius:var(--radius-sm); padding:14px 18px;">
+            <div style="width:32px; height:32px; border-radius:50%; background:var(--orange); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
+            <div>
+              <strong style="font-size:0.88rem;"><span data-lang="es">Generaci&oacute;n con IA</span><span data-lang="en">AI Generation</span></strong>
+              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Claude genera preguntas usando documentos SKILL</span><span data-lang="en">Claude generates questions using SKILL documents</span></p>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:14px; background:var(--wb-blue-light); border-radius:var(--radius-sm); padding:14px 18px;">
+            <div style="width:32px; height:32px; border-radius:50%; background:var(--wb-blue); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
+            <div>
+              <strong style="font-size:0.88rem;"><span data-lang="es">Revisi&oacute;n Experta (22 horas)</span><span data-lang="en">Expert Review (22 hours)</span></strong>
+              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Javier Trigoso revis&oacute; cada pregunta en profundidad</span><span data-lang="en">Javier Trigoso reviewed each question in depth</span></p>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:14px; background:var(--teal-light); border-radius:var(--radius-sm); padding:14px 18px;">
+            <div style="width:32px; height:32px; border-radius:50%; background:var(--teal); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
+            <div>
+              <strong style="font-size:0.88rem;"><span data-lang="es">QA Spot Check — 94.9% aprobaci&oacute;n</span><span data-lang="en">QA Spot Check — 94.9% pass rate</span></strong>
+              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Muestreo: 16 archivos &times; 3 preguntas, 4 categor&iacute;as de criterios</span><span data-lang="en">Sampling: 16 files &times; 3 questions, 4 criteria categories</span></p>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:14px; background:#F3E8FF; border-radius:var(--radius-sm); padding:14px 18px;">
+            <div style="width:32px; height:32px; border-radius:50%; background:#7C3AED; color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
+            <div>
+              <strong style="font-size:0.88rem;"><span data-lang="es">Panel Internacional: Barton &times; Hendrick</span><span data-lang="en">International Panel: Barton &times; Hendrick</span></strong>
+              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">Craig Barton y Carl Hendrick revisaron 395 preguntas ED</span><span data-lang="en">Craig Barton & Carl Hendrick reviewed 395 ED questions</span></p>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:14px; background:#ECFDF5; border-radius:var(--radius-sm); padding:14px 18px;">
+            <div style="width:32px; height:32px; border-radius:50%; background:var(--green); color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">5</div>
+            <div>
+              <strong style="font-size:0.88rem;"><span data-lang="es">Correcciones y Entrega Final</span><span data-lang="en">Corrections & Final Delivery</span></strong>
+              <p style="font-size:0.8rem; color:var(--text-muted); margin:2px 0 0;"><span data-lang="es">198 archivos Excel = 5,940 preguntas listas para uso</span><span data-lang="en">198 Excel files = 5,940 questions ready for use</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         Safeguarding & AI Ethics
+         ============================================================ -->
+    <div class="accordion" style="margin-top:16px;">
+      <div class="accordion-header">
+        <span class="accordion-icon"><i class="fas fa-shield-alt" style="color:#DC2626;"></i></span>
+        <h3 style="flex:1">
+          <span data-lang="es">Protocolo de Protecci&oacute;n: Riesgos IA con Menores</span>
+          <span data-lang="en">Safeguarding Protocol: AI Risks with Minors</span>
+        </h3>
+        <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="accordion-content">
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:16px;">
+          <span data-lang="es">Cualquier pa&iacute;s que replique herramientas de IA con menores necesita un protocolo expl&iacute;cito de riesgos. EMC desarroll&oacute; con DRELM/MINEDU la <strong style="color:var(--dark);">&ldquo;Ruta de Acci&oacute;n frente a Riesgos en la Interacci&oacute;n con IA&rdquo;</strong>, un marco de 5 fases:</span>
+          <span data-lang="en">Any country replicating AI tools with minors needs an explicit risk protocol. EMC developed with DRELM/MINEDU the <strong style="color:var(--dark);">&ldquo;AI Interaction Risk Action Route&rdquo;</strong>, a 5-phase framework:</span>
+        </p>
+        <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:8px; margin-bottom:16px;">
+          <div style="text-align:center; padding:12px 8px; background:#FEF2F2; border-radius:var(--radius-sm);">
+            <i class="fas fa-clipboard-list" style="color:#DC2626; font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+            <p style="font-size:0.72rem; font-weight:600; color:#DC2626; margin:0;"><span data-lang="es">Preparaci&oacute;n</span><span data-lang="en">Preparation</span></p>
+          </div>
+          <div style="text-align:center; padding:12px 8px; background:var(--orange-light); border-radius:var(--radius-sm);">
+            <i class="fas fa-play-circle" style="color:var(--orange); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+            <p style="font-size:0.72rem; font-weight:600; color:var(--orange); margin:0;"><span data-lang="es">Implementaci&oacute;n</span><span data-lang="en">Implementation</span></p>
+          </div>
+          <div style="text-align:center; padding:12px 8px; background:var(--wb-blue-light); border-radius:var(--radius-sm);">
+            <i class="fas fa-search" style="color:var(--wb-blue); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+            <p style="font-size:0.72rem; font-weight:600; color:var(--wb-blue); margin:0;"><span data-lang="es">Detecci&oacute;n</span><span data-lang="en">Detection</span></p>
+          </div>
+          <div style="text-align:center; padding:12px 8px; background:#F3E8FF; border-radius:var(--radius-sm);">
+            <i class="fas fa-flag" style="color:#7C3AED; font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+            <p style="font-size:0.72rem; font-weight:600; color:#7C3AED; margin:0;"><span data-lang="es">Reporte</span><span data-lang="en">Reporting</span></p>
+          </div>
+          <div style="text-align:center; padding:12px 8px; background:#ECFDF5; border-radius:var(--radius-sm);">
+            <i class="fas fa-hands-helping" style="color:var(--green); font-size:1.1rem; margin-bottom:6px; display:block;"></i>
+            <p style="font-size:0.72rem; font-weight:600; color:var(--green); margin:0;"><span data-lang="es">Seguimiento</span><span data-lang="en">Follow-up</span></p>
+          </div>
+        </div>
+        <p style="font-size:0.82rem; background:#FEF2F2; border-left:4px solid #DC2626; border-radius:var(--radius-sm); padding:14px 18px; color:var(--text-muted); margin:0;">
+          <i class="fas fa-exclamation-triangle" style="color:#DC2626; margin-right:8px;"></i>
+          <span data-lang="es"><strong style="color:var(--dark);">Esencial para replicadores:</strong> Cubre violencia, ideaci&oacute;n suicida, abuso de sustancias y otros indicadores de riesgo. Incluye roles claros, tiempos y referencias legales. Disponible en la Biblioteca de Documentos.</span>
+          <span data-lang="en"><strong style="color:var(--dark);">Essential for replicators:</strong> Covers violence, suicidal ideation, substance abuse and other risk indicators. Includes clear roles, timelines, and legal references. Available in the Document Library.</span>
+        </p>
       </div>
     </div>
 
@@ -3775,40 +3930,85 @@ let currentLang = 'es';
 let activeFilter = 'all';
 
 const DOCUMENTS = [
-  // TUTOR IA
+  // ═══════════════════════════════════════════
+  // TUTOR IA — Core Documents
+  // ═══════════════════════════════════════════
   {id:1, t_es:"Guía Docente Matemáticas MEJORADA", t_en:"Improved Math Teacher Guide", d_es:"Guía completa para docentes sobre el uso del tutor IA", d_en:"Complete guide for teachers on AI tutor usage", cat:"tutor-ia", url:null},
   {id:2, t_es:"Mapeo de Competencias MINEDU", t_en:"MINEDU Competency Mapping", d_es:"Mapeo de las 4 competencias matemáticas al banco de preguntas", d_en:"Mapping of 4 math competencies to the question bank", cat:"tutor-ia", url:null},
-  {id:3, t_es:"README Banco de Preguntas", t_en:"Question Bank README", d_es:"Documentación técnica del banco de ~4,000 preguntas", d_en:"Technical docs for the ~4,000 question bank", cat:"tutor-ia", url:null},
-  {id:4, t_es:"Guía de Replicación (ES/EN)", t_en:"Replication Guide (ES/EN)", d_es:"Paso a paso para replicar el banco de preguntas", d_en:"Step-by-step to replicate the question bank", cat:"tutor-ia", url:null},
-  {id:5, t_es:"Protocolo de Testing", t_en:"Testing Protocol", d_es:"Protocolo para validar preguntas diagnósticas", d_en:"Protocol for validating diagnostic questions", cat:"tutor-ia", url:null},
-  {id:6, t_es:"QA Report", t_en:"QA Report", d_es:"79 archivos, 48 revisiones profundas", d_en:"79 files, 48 deep reviews", cat:"tutor-ia", url:null},
-  {id:7, t_es:"Panel Review Craig Barton", t_en:"Craig Barton Panel Review", d_es:"Revisión por expertos internacionales", d_en:"International expert review", cat:"tutor-ia", url:null},
+  {id:10, t_es:"Sílabo Docentes Matemáticas", t_en:"Math Teachers Syllabus", d_es:"Programa de 14 horas de capacitación", d_en:"14-hour training syllabus", cat:"tutor-ia", url:null},
   {id:8, t_es:"Slides Matemáticas Día 1", t_en:"Math Slides Day 1", d_es:"Presentación capacitación día 1", d_en:"Training presentation day 1", cat:"tutor-ia", url:null},
   {id:9, t_es:"Slides Matemáticas Día 2", t_en:"Math Slides Day 2", d_es:"Presentación capacitación día 2", d_en:"Training presentation day 2", cat:"tutor-ia", url:null},
-  {id:10, t_es:"Sílabo Docentes Matemáticas", t_en:"Math Teachers Syllabus", d_es:"Programa de 14 horas de capacitación", d_en:"14-hour training syllabus", cat:"tutor-ia", url:null},
+  {id:55, t_es:"Modelo de 5 Momentos", t_en:"5-Moment Model", d_es:"Estructura pedagógica de 5 momentos para sesiones en aula", d_en:"5-moment pedagogical structure for classroom sessions", cat:"tutor-ia", url:null},
+  {id:56, t_es:"Marco de Evaluación 100 Puntos", t_en:"100-Point Assessment Framework", d_es:"Sistema de evaluación del tutor con rúbrica de 100 puntos", d_en:"Tutor assessment system with 100-point rubric", cat:"tutor-ia", url:null},
+  {id:57, t_es:"Especificaciones Técnicas uDocz", t_en:"uDocz Technical Specs", d_es:"Especificaciones técnicas para la plataforma", d_en:"Technical specifications for the platform", cat:"tutor-ia", url:null},
+  {id:44, t_es:"Video: Demo Tutor IA Matemáticas", t_en:"Video: AI Math Tutor Demo", d_es:"Demostración del tutor de matemáticas", d_en:"Math tutor demonstration", cat:"tutor-ia", url:"https://drive.google.com/file/d/1Je8uRcmj3mQZp_KzbHjMvPvC4SpkqdxL/view"},
   {id:11, t_es:"Carpeta: Capacitación Matemáticas", t_en:"Folder: Math Training", d_es:"Todos los materiales de capacitación de matemáticas", d_en:"All math training materials", cat:"tutor-ia", url:"https://drive.google.com/drive/folders/1RknhY4YcTpk2WxaWwoy-F_2-r9PmQoOm"},
-  // COACH IA
-  {id:12, t_es:"Guía Completa del Tutor OV", t_en:"Complete OV Tutor Guide", d_es:"Guía imprimible para tutores OV", d_en:"Printable guide for OV tutors", cat:"coach-ia", url:null},
-  {id:13, t_es:"Sesiones 12×90min FINAL", t_en:"12 Sessions ×90min FINAL", d_es:"Diseño final de las 12 sesiones", d_en:"Final design of 12 sessions", cat:"coach-ia", url:null},
+
+  // TUTOR IA — Question Bank & AI Methodology
+  {id:58, t_es:"⭐ SKILL: Evaluaciones Diagnósticas con IA", t_en:"⭐ SKILL: AI Diagnostic Assessments", d_es:"Metodología para usar Claude/IA para crear preguntas diagnósticas — el IP central del proyecto", d_en:"Methodology to use Claude/AI to create diagnostic questions — the project's core IP", cat:"tutor-ia", url:null},
+  {id:59, t_es:"⭐ SKILL: Análisis Pedagógico Matemáticas", t_en:"⭐ SKILL: Math Pedagogy Analysis", d_es:"Especificación de cómo usar IA para análisis pedagógico de 7 dimensiones", d_en:"Specification for using AI for 7-dimension pedagogical analysis", cat:"tutor-ia", url:null},
+  {id:3, t_es:"README Banco de Preguntas", t_en:"Question Bank README", d_es:"Documentación técnica: 5,940 preguntas (4,950 BM + 990 ED)", d_en:"Technical docs: 5,940 questions (4,950 BM + 990 ED)", cat:"tutor-ia", url:null},
+  {id:4, t_es:"Guía de Replicación (ES)", t_en:"Replication Guide (ES)", d_es:"Paso a paso para replicar el banco de preguntas (español)", d_en:"Step-by-step to replicate the question bank (Spanish)", cat:"tutor-ia", url:null},
+  {id:60, t_es:"Replication Guide (EN)", t_en:"Replication Guide (EN)", d_es:"Versión en inglés de la guía de replicación", d_en:"English version of the replication guide", cat:"tutor-ia", url:null},
+  {id:61, t_es:"Blog: Cómo Creamos 5,940 Preguntas (ES)", t_en:"Blog: How We Created 5,940 Questions (ES)", d_es:"Artículo de metodología paso a paso (español)", d_en:"Step-by-step methodology article (Spanish)", cat:"tutor-ia", url:null},
+  {id:62, t_es:"Blog: How We Created 5,940 Questions (EN)", t_en:"Blog: How We Created 5,940 Questions (EN)", d_es:"Versión en inglés del blog de metodología", d_en:"English version of the methodology blog", cat:"tutor-ia", url:null},
+  {id:63, t_es:"Mapeo uDocz: Competencias → Temas (79 subtemas)", t_en:"uDocz Mapping: Competencies → Topics (79 subtopics)", d_es:"Mapeo completo de competencias, temas y subtemas", d_en:"Complete competency, topic, and subtopic mapping", cat:"tutor-ia", url:null},
+  {id:64, t_es:"Guía de Integración uDocz", t_en:"uDocz Integration Guide", d_es:"Guía para integrar el banco de preguntas en la plataforma", d_en:"Guide for integrating the question bank in the platform", cat:"tutor-ia", url:null},
+  {id:65, t_es:"Instrucciones uDocz Implementación", t_en:"uDocz Implementation Instructions", d_es:"Instrucciones detalladas para implementación en uDocz", d_en:"Detailed implementation instructions for uDocz", cat:"tutor-ia", url:null},
+  {id:66, t_es:"Muestras BM: Preguntas Diagnósticas (6 archivos, 300 ej.)", t_en:"BM Samples: Diagnostic Questions (6 files, 300 ex.)", d_es:"50 preguntas por competencia — opción múltiple con mapeo a concepciones erróneas", d_en:"50 questions per competency — MC with misconception mapping", cat:"tutor-ia", url:null},
+  {id:67, t_es:"Muestras ED: Detección de Errores (6 archivos, 60 ej.)", t_en:"ED Samples: Error Detection (6 files, 60 ex.)", d_es:"10 preguntas por competencia — estudiante identifica el error en una solución", d_en:"10 questions per competency — student identifies the error in a solution", cat:"tutor-ia", url:null},
+
+  // TUTOR IA — Quality Assurance
+  {id:5, t_es:"Protocolo Testing Plataformas B/B'", t_en:"Platform Testing Protocol B/B'", d_es:"34 casos de prueba Modo B, 44 para B', criterios Go/No-Go", d_en:"34 test cases Mode B, 44 for B', Go/No-Go criteria", cat:"tutor-ia", url:null},
+  {id:68, t_es:"Instrucciones QA Plataforma uDocz", t_en:"uDocz Platform QA Instructions", d_es:"Instrucciones QA con todas las URLs (Modo Casa/B/B'/Recuperación)", d_en:"QA instructions with all platform URLs (Mode Casa/B/B'/Recovery)", cat:"tutor-ia", url:null},
+  {id:6, t_es:"QA Spot Check: Plan + Reporte", t_en:"QA Spot Check: Plan + Report", d_es:"16 archivos × 3 preguntas — resultado: 94.9% tasa de aprobación en 3,950 preguntas", d_en:"16 files × 3 questions — result: 94.9% pass rate on 3,950 questions", cat:"tutor-ia", url:null},
+  {id:69, t_es:"Protocolo Revisión Experto (Javier Trigoso, 22 hrs)", t_en:"Expert Review Protocol (Javier Trigoso, 22 hrs)", d_es:"Protocolo de revisión profunda por experto matemático peruano", d_en:"Deep review protocol by Peruvian math expert", cat:"tutor-ia", url:null},
+  {id:70, t_es:"Informe Correcciones Post-Revisión", t_en:"Post-Review Corrections Report", d_es:"Qué se corrigió y cómo después de la revisión experta", d_en:"What was fixed and how after expert review", cat:"tutor-ia", url:null},
+  {id:7, t_es:"Panel Revisión Expertos: Barton × Hendrick", t_en:"Expert Panel Review: Barton × Hendrick", d_es:"Craig Barton y Carl Hendrick revisan 395 preguntas de detección de errores", d_en:"Craig Barton & Carl Hendrick review 395 error-detection questions", cat:"tutor-ia", url:null},
+
+  // ═══════════════════════════════════════════
+  // COACH IA — Core Documents
+  // ═══════════════════════════════════════════
+  {id:12, t_es:"Guía Completa del Tutor OV", t_en:"Complete OV Tutor Guide", d_es:"Guía imprimible para tutores de orientación vocacional", d_en:"Printable guide for career guidance tutors", cat:"coach-ia", url:null},
+  {id:13, t_es:"Sesiones 12×90min FINAL", t_en:"12 Sessions ×90min FINAL", d_es:"Diseño final de las 12 sesiones de orientación vocacional", d_en:"Final design of 12 career guidance sessions", cat:"coach-ia", url:null},
   {id:14, t_es:"Fichas de Trabajo", t_en:"Student Worksheets", d_es:"IKIGAI, empatía, sesgos, Plan A", d_en:"IKIGAI, empathy, biases, Plan A", cat:"coach-ia", url:null},
   {id:15, t_es:"Diseño Coach Vocacional", t_en:"Career Coach Design", d_es:"Documento de diseño del coach IA", d_en:"AI coach design document", cat:"coach-ia", url:null},
   {id:16, t_es:"Slides M1-M6 Tutores OV", t_en:"Slides M1-M6 OV Tutors", d_es:"6 presentaciones de capacitación OV", d_en:"6 OV training presentations", cat:"coach-ia", url:null},
+  {id:45, t_es:"Video: Demo Coach IA Vocacional", t_en:"Video: AI Career Coach Demo", d_es:"Demostración del coach vocacional", d_en:"Career coach demonstration", cat:"coach-ia", url:"https://drive.google.com/file/d/1cY-CvrgCDIBztI9OUuI8lHwJnV-okw-1/view"},
   {id:17, t_es:"Carpeta: Capacitación OV", t_en:"Folder: OV Training", d_es:"Todos los materiales OV", d_en:"All OV training materials", cat:"coach-ia", url:"https://drive.google.com/drive/folders/1m_OnilfgQSEJusmA3nz9Xk8-hcq8rsVo"},
+
+  // COACH IA — Testing Protocols
+  {id:71, t_es:"Protocolo StressTest Career Coach", t_en:"Career Coach Stress Test Protocol", d_es:"10 testers, 3 tracks, 10 personas estudiantes, protocolo de 8 horas", d_en:"10 testers, 3 tracks, 10 student personas, 8-hour protocol", cat:"coach-ia", url:null},
+  {id:72, t_es:"Instrucciones Tester NotebookLM", t_en:"NotebookLM Tester Instructions", d_es:"Manual: 80 preguntas en 5 sesiones, 7 dimensiones de scoring", d_en:"Manual: 80 questions across 5 sessions, 7 scoring dimensions", cat:"coach-ia", url:null},
+  {id:73, t_es:"NotebookLM StressTest Toolkit (plantilla)", t_en:"NotebookLM Stress Test Toolkit (template)", d_es:"Hojas de scoring con promedios automáticos", d_en:"Scoring sheets with automatic averages", cat:"coach-ia", url:null},
+  {id:74, t_es:"NotebookLM StressTest — Ejemplo Completado (Irene)", t_en:"NotebookLM Stress Test — Completed Example (Irene)", d_es:"Ejemplo real completado — scores, observaciones, hallazgos", d_en:"Real completed example — scores, observations, findings", cat:"coach-ia", url:null},
+  {id:75, t_es:"Protocolo Coordinador Testing", t_en:"Testing Coordinator Protocol", d_es:"Rol y responsabilidades del coordinador de testing", d_en:"Test coordinator role and responsibilities", cat:"coach-ia", url:null},
+  {id:76, t_es:"Ejemplo Protocolo Tester Individual", t_en:"Sample Individual Tester Protocol", d_es:"Protocolo muestra para tester con persona asignada", d_en:"Sample individual tester protocol with assigned persona", cat:"coach-ia", url:null},
+  {id:77, t_es:"Protocolo Creador de Contenido", t_en:"Content Creator Protocol", d_es:"Protocolo del rol de creador de contenido en testing", d_en:"Content creator testing role protocol", cat:"coach-ia", url:null},
+
+  // ═══════════════════════════════════════════
   // CAPACITACIÓN
-  {id:18, t_es:"Sílabo Coordinadores PIP", t_en:"PIP Coordinators Syllabus", d_es:"Programa para coordinadores", d_en:"Coordinator training program", cat:"capacitacion", url:null},
+  // ═══════════════════════════════════════════
+  {id:18, t_es:"Sílabo Coordinadores PIP", t_en:"PIP Coordinators Syllabus", d_es:"Programa para coordinadores PIP", d_en:"PIP coordinator training program", cat:"capacitacion", url:null},
+  {id:78, t_es:"Sílabo Coordinadores de Innovación", t_en:"Innovation Coordinators Syllabus", d_es:"Programa de capacitación para coordinadores de innovación (versión nueva)", d_en:"Innovation coordinator training program (newer version)", cat:"capacitacion", url:null},
   {id:19, t_es:"Plan Logístico", t_en:"Logistics Plan", d_es:"Transporte, materiales, sedes para 460+ docentes", d_en:"Transport, materials, venues for 460+ teachers", cat:"capacitacion", url:null},
-  {id:20, t_es:"Agenda Formación FINAL", t_en:"Training Agenda FINAL", d_es:"Agenda maestra 2 días en UPC", d_en:"Master agenda 2 days at UPC", cat:"capacitacion", url:null},
   {id:21, t_es:"Guía Train the Trainers", t_en:"Train the Trainers Guide", d_es:"Preparación para 5-6 facilitadores", d_en:"Prep guide for 5-6 facilitators", cat:"capacitacion", url:null},
+  {id:20, t_es:"Agenda Formación FINAL", t_en:"Training Agenda FINAL", d_es:"Agenda maestra 2 días en UPC", d_en:"Master agenda 2 days at UPC", cat:"capacitacion", url:null},
+  {id:79, t_es:"Protocolo Aula de Innovación Pedagógica", t_en:"Computer Lab Protocol", d_es:"Rotación de dispositivos, Plan B offline, gestión de laboratorio", d_en:"Device rotation, Plan B offline, lab management", cat:"capacitacion", url:null},
+  {id:80, t_es:"Protocolo Mini-Capacitación", t_en:"Quick Training Protocol", d_es:"Sesiones rápidas de preparación para docentes", d_en:"Quick teacher prep sessions", cat:"capacitacion", url:null},
+  {id:81, t_es:"Protocolo WhatsApp Semanal", t_en:"Weekly WhatsApp Protocol", d_es:"Soporte semanal a docentes vía WhatsApp", d_en:"Weekly teacher support via WhatsApp", cat:"capacitacion", url:null},
   {id:22, t_es:"Presentación para Directores", t_en:"Director Presentation", d_es:"Slides de sensibilización para directores (uDocz)", d_en:"Director awareness slides (uDocz)", cat:"capacitacion", url:"https://docs.google.com/presentation/d/1O0b6NAEbRuFjfIN9uHExRueRwrJashlZ/edit"},
   {id:23, t_es:"Fotos Campaña Directores", t_en:"Director Campaign Photos", d_es:"Fotos de las reuniones con directores", d_en:"Photos from director meetings", cat:"capacitacion", url:"https://drive.google.com/drive/folders/1ldZR9ehCFgvht0kkyPT1hykuPyTX2Vy0"},
+
+  // ═══════════════════════════════════════════
   // EVALUACIÓN
+  // ═══════════════════════════════════════════
   {id:24, t_es:"Pre-Analysis Plan", t_en:"Pre-Analysis Plan", d_es:"Plan de pre-análisis registrado del RCT", d_en:"Registered RCT pre-analysis plan", cat:"evaluacion", url:null},
   {id:25, t_es:"AEA RCT Registry (AEARCTR-0012847)", t_en:"AEA RCT Registry (AEARCTR-0012847)", d_es:"Registro público del ensayo en AEA", d_en:"Public trial registration on AEA", cat:"evaluacion", url:"https://www.socialscienceregistry.org/trials/17917"},
+  {id:29, t_es:"IRB Protocol 564", t_en:"IRB Protocol 564", d_es:"Aprobación ética Exempt Cat. 1 + MINEDU #041-2025-ED", d_en:"Ethics approval Exempt Cat. 1 + MINEDU #041-2025-ED", cat:"evaluacion", url:null},
   {id:26, t_es:"The Personalization Trap — Resumen", t_en:"The Personalization Trap — Summary", d_es:"Resumen de 2 páginas: teoría y diseño del ensayo", d_en:"2-page summary: theory and trial design", cat:"evaluacion", url:null},
   {id:27, t_es:"Artículo Publicado AER", t_en:"Published AER Article", d_es:"American Economic Review Vol 117(3): 892-931", d_en:"American Economic Review Vol 117(3): 892-931", cat:"evaluacion", url:null},
   {id:28, t_es:"Policy Brief (5 páginas)", t_en:"Policy Brief (5 pages)", d_es:"Resumen de políticas para tomadores de decisiones", d_en:"Policy summary for decision makers", cat:"evaluacion", url:null},
-  {id:29, t_es:"IRB Protocol 564", t_en:"IRB Protocol 564", d_es:"Aprobación ética Exempt Cat. 1 + MINEDU #041-2025-ED", d_en:"Ethics approval Exempt Cat. 1 + MINEDU #041-2025-ED", cat:"evaluacion", url:null},
-  {id:30, t_es:"Autorización DRELM (Oficio 00012)", t_en:"DRELM Authorization (Oficio 00012)", d_es:"Autorización oficial para operar en escuelas", d_en:"Official authorization for school operations", cat:"evaluacion", url:null},
   {id:46, t_es:"Examen Línea Base (30 ítems)", t_en:"Baseline Exam (30 items)", d_es:"Test diagnóstico alineado a 5to año", d_en:"Diagnostic test aligned to 5th year", cat:"evaluacion", url:null},
   {id:47, t_es:"Examen de Contenido (40 ítems)", t_en:"Content Exam (40 items)", d_es:"Cubre temas de intervención con múltiples niveles", d_en:"Covers intervention topics with multiple levels", cat:"evaluacion", url:null},
   {id:48, t_es:"Test de Transferencia", t_en:"Transfer Test", d_es:"RESULTADO PRIMARIO — formatos novedosos de problemas", d_en:"PRIMARY OUTCOME — novel problem formats", cat:"evaluacion", url:null},
@@ -3816,26 +4016,35 @@ const DOCUMENTS = [
   {id:50, t_es:"Batería Metacognitiva", t_en:"Metacognitive Battery", d_es:"Calibración, persistencia, auto-diagnóstico de errores", d_en:"Calibration, persistence, error self-diagnosis", cat:"evaluacion", url:null},
   {id:51, t_es:"Cuestionarios Estudiantes (v5)", t_en:"Student Questionnaires (v5)", d_es:"Línea base, longitudinal, satisfacción", d_en:"Baseline, longitudinal, satisfaction", cat:"evaluacion", url:null},
   {id:52, t_es:"Cuestionarios Docentes (v5)", t_en:"Teacher Questionnaires (v5)", d_es:"3 perfiles: matemáticas, tutoría, PIP", d_en:"3 profiles: math, tutoring, PIP", cat:"evaluacion", url:null},
-  {id:53, t_es:"Especificaciones uDocz", t_en:"uDocz Specifications", d_es:"Especificaciones técnicas para la plataforma", d_en:"Technical specifications for the platform", cat:"evaluacion", url:null},
+  {id:82, t_es:"Instrumentos Línea Base v5 (5 documentos)", t_en:"Baseline Instruments v5 (5 documents)", d_es:"Batería completa de instrumentos para línea base", d_en:"Complete baseline instrument battery", cat:"evaluacion", url:null},
+  {id:83, t_es:"Notas Grupo Focal", t_en:"Focus Group Notes", d_es:"Notas cualitativas de grupos focales del programa", d_en:"Qualitative focus group notes from the program", cat:"evaluacion", url:null},
+  {id:30, t_es:"Autorización DRELM (Oficio 00012)", t_en:"DRELM Authorization (Oficio 00012)", d_es:"Autorización oficial para operar en 110 escuelas", d_en:"Official authorization for 110 school operations", cat:"evaluacion", url:null},
+
+  // ═══════════════════════════════════════════
   // IMPLEMENTACIÓN
-  {id:31, t_es:"Plan DRELM", t_en:"DRELM Plan", d_es:"Plan operativo de implementación con DRELM", d_en:"DRELM operational implementation plan", cat:"implementacion", url:null},
+  // ═══════════════════════════════════════════
+  {id:84, t_es:"Gantt Timeline del Programa", t_en:"Program Gantt Timeline", d_es:"Cronograma completo del programa con hitos clave", d_en:"Complete program timeline with key milestones", cat:"implementacion", url:null},
+  {id:31, t_es:"Plan DRELM Implementación", t_en:"DRELM Implementation Plan", d_es:"Plan operativo de implementación con DRELM", d_en:"DRELM operational implementation plan", cat:"implementacion", url:null},
+  {id:85, t_es:"OM N°00125 — Convocatoria Docentes (160+ escuelas)", t_en:"OM N°00125 — Teacher Convocation (160+ schools)", d_es:"Convocatoria oficial de capacitación por UGEL (marzo 2026)", d_en:"Official training convocation by UGEL (March 2026)", cat:"implementacion", url:null},
+  {id:86, t_es:"Oficio DRELM: Solicitud Colaboración (Nov 2025)", t_en:"DRELM Letter: Collaboration Request (Nov 2025)", d_es:"Oficio original que inició la alianza DRELM-Banco Mundial", d_en:"Original letter that started the DRELM-World Bank partnership", cat:"implementacion", url:null},
   {id:32, t_es:"Hub de Links", t_en:"Links Hub", d_es:"Documento maestro con todos los enlaces", d_en:"Master document with all links", cat:"implementacion", url:"https://docs.google.com/document/d/16vnyhPWGvm4VG-F4wtghaaDhVTA_wE0zZM_7xAQp-bA"},
   {id:33, t_es:"Task Tracker", t_en:"Task Tracker", d_es:"Seguimiento de tareas del equipo", d_en:"Team task tracking", cat:"implementacion", url:"https://docs.google.com/document/d/1xYOwy-T1ilvFwjpPPmPzryRmXTWd4LqPcfnu9Ac4xTI"},
   {id:34, t_es:"Hoja de Ruta Tutor IA", t_en:"AI Tutor Roadmap", d_es:"Hoja de ruta de desarrollo", d_en:"Development roadmap", cat:"implementacion", url:"https://docs.google.com/document/d/11aaIu_R7A9jnnCbarEwg5QjnPz4ap1-8ItIkrX-oAjU"},
-  {id:35, t_es:"Diseño de Capacitación", t_en:"Training Design", d_es:"Documento de diseño original", d_en:"Original training design doc", cat:"implementacion", url:"https://docs.google.com/document/d/1OPhxs6uaNkFrGb-KwrPne1YzlwKeq9YgYXYK0VvIga8"},
-  {id:36, t_es:"Plan de Clase Sesión 1", t_en:"Lesson Plan Session 1", d_es:"Plan detallado primera sesión", d_en:"Detailed first session plan", cat:"implementacion", url:"https://docs.google.com/document/d/1z1ouuDpA7yuifQ1ov5u63WJUV1PiKHAJWWkJLGvBAgc"},
-  {id:37, t_es:"Protocolo Revisión Preguntas", t_en:"Question Review Protocol", d_es:"Protocolo de revisión experta", d_en:"Expert review protocol", cat:"implementacion", url:"https://docs.google.com/document/d/17ep0vF2t3svXp0CsKY0W04i_HG9CHs6X4B7HafEyrGU"},
-  {id:38, t_es:"Invitación Facilitadores", t_en:"Facilitator Invitation", d_es:"Invitación formal a facilitadores", d_en:"Formal facilitator invitation", cat:"implementacion", url:"https://docs.google.com/document/d/1Wt1lEPN8Ee6SLN1F8ZrprPDrZvIcgzvdPDtXpaXdqck"},
+  {id:35, t_es:"Diseño de Capacitación", t_en:"Training Design", d_es:"Documento de diseño original de la capacitación", d_en:"Original training design doc", cat:"implementacion", url:"https://docs.google.com/document/d/1OPhxs6uaNkFrGb-KwrPne1YzlwKeq9YgYXYK0VvIga8"},
+
+  // ═══════════════════════════════════════════
   // REFERENCIA
-  {id:54, t_es:"README: Guía de la Biblioteca de Documentos", t_en:"README: Document Library Guide", d_es:"Guía de 5 páginas explicando todos los documentos del hub", d_en:"5-page guide explaining all hub documents", cat:"referencia", url:null},
-  {id:39, t_es:"Carpeta Principal del Programa", t_en:"Main Program Folder", d_es:"Carpeta raíz de Google Drive", d_en:"Root Google Drive folder", cat:"referencia", url:"https://drive.google.com/drive/folders/1hjhj32Wp_0VzNiGGPuAkA5t29eOWA_cC"},
-  {id:40, t_es:"Innovation Award Implementation Plan", t_en:"Innovation Award Implementation Plan", d_es:"Plan presentado al WBG Innovation Award", d_en:"Plan submitted to WBG Innovation Award", cat:"referencia", url:null},
-  {id:41, t_es:"Beamer Slides del Programa", t_en:"Program Beamer Slides", d_es:"Presentación completa del piloto", d_en:"Complete pilot presentation", cat:"referencia", url:null},
+  // ═══════════════════════════════════════════
+  {id:40, t_es:"Innovation Award Implementation Plan", t_en:"Innovation Award Implementation Plan", d_es:"Plan presentado al WBG Presidential Innovation Award", d_en:"Plan submitted to WBG Presidential Innovation Award", cat:"referencia", url:null},
+  {id:41, t_es:"Beamer Slides del Programa", t_en:"Program Beamer Slides", d_es:"Presentación completa del piloto (PDF)", d_en:"Complete pilot presentation (PDF)", cat:"referencia", url:null},
+  {id:87, t_es:"⭐ Ruta de Acción: Riesgos IA con Menores", t_en:"⭐ AI Risk Action Protocol for Minors", d_es:"Protocolo DRELM/MINEDU para detectar y responder a indicadores de riesgo durante interacciones con IA", d_en:"DRELM/MINEDU protocol for detecting and responding to risk indicators during AI interactions", cat:"referencia", url:null},
+  {id:88, t_es:"Presentación Kickoff DRELM", t_en:"DRELM Kickoff Presentation", d_es:"Presentación del lanzamiento oficial con DRELM", d_en:"Official DRELM launch presentation", cat:"referencia", url:null},
   {id:42, t_es:"Guía de Branding EMC", t_en:"EMC Branding Guide", d_es:"Identidad visual del programa", d_en:"Program visual identity", cat:"referencia", url:null},
+  {id:54, t_es:"README: Guía de la Biblioteca", t_en:"README: Document Library Guide", d_es:"Guía de 5 páginas explicando todos los documentos del hub", d_en:"5-page guide explaining all hub documents", cat:"referencia", url:null},
+  {id:89, t_es:"Normativa Peruana de Referencia (6 documentos)", t_en:"Peru Regulatory Framework (6 documents)", d_es:"DS 004-2018, DS 013-2022, RVM 212-2020, RM 383-2025, OV en TOE", d_en:"DS 004-2018, DS 013-2022, RVM 212-2020, RM 383-2025, OV in TOE", cat:"referencia", url:null},
+  {id:39, t_es:"Carpeta Principal del Programa", t_en:"Main Program Folder", d_es:"Carpeta raíz de Google Drive", d_en:"Root Google Drive folder", cat:"referencia", url:"https://drive.google.com/drive/folders/1hjhj32Wp_0VzNiGGPuAkA5t29eOWA_cC"},
   // VIDEOS
   {id:43, t_es:"Video: Jaime Saavedra — Bienvenida", t_en:"Video: Jaime Saavedra — Welcome", d_es:"Director de Educación del BM da la bienvenida", d_en:"WB Education Director welcomes the program", cat:"referencia", url:"https://drive.google.com/file/d/1epEU4vQEa4nxbwcHkuKG1mz8KBtSpIfe/view"},
-  {id:44, t_es:"Video: Demo Tutor IA Matemáticas", t_en:"Video: AI Math Tutor Demo", d_es:"Demostración del tutor de matemáticas", d_en:"Math tutor demonstration", cat:"tutor-ia", url:"https://drive.google.com/file/d/1Je8uRcmj3mQZp_KzbHjMvPvC4SpkqdxL/view"},
-  {id:45, t_es:"Video: Demo Coach IA Vocacional", t_en:"Video: AI Career Coach Demo", d_es:"Demostración del coach vocacional", d_en:"Career coach demonstration", cat:"coach-ia", url:"https://drive.google.com/file/d/1cY-CvrgCDIBztI9OUuI8lHwJnV-okw-1/view"},
 ];
 
 const CAT_COLORS = {'tutor-ia':'#F57B21','coach-ia':'#0D9488','capacitacion':'#7C3AED','evaluacion':'#003366','implementacion':'#6B7280','referencia':'#DC2626'};
