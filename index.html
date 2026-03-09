@@ -483,10 +483,11 @@
     }
     .gallito-container img,
     .gallito-container video {
-      width: 220%;
-      height: 220%;
-      object-fit: contain;
-      margin-top: -15%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(2);
+      transform-origin: 50% 45%;
     }
     .gallito-label {
       text-align: center;
@@ -1311,13 +1312,23 @@
       }
 
       .header-inner {
-        padding: 0 16px;
+        padding: 0 12px;
+      }
+      .header-inner > img {
+        display: none;
       }
       .header-logo {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .header-logo span {
-        font-size: 0.78rem;
+        font-size: 0.72rem;
+      }
+      .header-actions {
+        flex-shrink: 0;
       }
 
       .container {
@@ -1646,16 +1657,11 @@
       <a href="#coach-ia" data-section="coach-ia">
         <span data-lang="es">Coach IA</span><span data-lang="en">AI Coach</span>
       </a>
-      <a href="#capacitacion" data-section="capacitacion">
+      <a href="#evaluacion" data-section="evaluacion">
         <span data-lang="es">M&#225;s</span><span data-lang="en">More</span>
         <i class="fas fa-chevron-down"></i>
       </a>
     </nav>
-
-    <div class="header-search">
-      <i class="fas fa-search"></i>
-      <input type="text" id="global-search" placeholder="Buscar..." data-placeholder-es="Buscar..." data-placeholder-en="Search...">
-    </div>
 
     <div class="header-actions">
       <button class="lang-btn" id="lang-toggle">EN</button>
@@ -1669,10 +1675,6 @@
 
   <!-- Mobile slide-down menu -->
   <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-search">
-      <i class="fas fa-search"></i>
-      <input type="text" id="mobile-search-input" placeholder="Buscar..." data-placeholder-es="Buscar..." data-placeholder-en="Search...">
-    </div>
     <a href="#programa">
       <span data-lang="es">El Programa</span><span data-lang="en">The Program</span>
     </a>
@@ -1681,9 +1683,6 @@
     </a>
     <a href="#coach-ia">
       <span data-lang="es">Coach IA Vocacional</span><span data-lang="en">AI Career Coach</span>
-    </a>
-    <a href="#capacitacion">
-      <span data-lang="es">Capacitaci&#243;n</span><span data-lang="en">Training</span>
     </a>
     <a href="#evaluacion">
       <span data-lang="es">Evaluaci&#243;n</span><span data-lang="en">Evaluation</span>
@@ -1776,6 +1775,10 @@
         </div>
         <div class="gallito-label">
           <p class="gradient-title">Eligiendo Mi Camino</p>
+          <p style="color:var(--text-muted); font-size:0.78rem; line-height:1.5; max-width:300px; margin:6px auto 0;">
+            <span data-lang="es">El <strong style="color:var(--dark);">Gallito de las Rocas</strong>, ave emblem&aacute;tica de Per&uacute;, simboliza el momento en que el estudiante est&aacute; listo para mostrarse al mundo y decidir su futuro.</span>
+            <span data-lang="en">The <strong style="color:var(--dark);">Gallito de las Rocas</strong> (Cock-of-the-rock), Peru's national bird, symbolizes the moment a student is ready to show who they are and decide their future.</span>
+          </p>
         </div>
       </div>
 
@@ -3449,75 +3452,7 @@
 </div>
 </section>
 
-<!-- SECTION 4: CAPACITACIÓN Y SOPORTE -->
-<section class="section" id="capacitacion">
-<div class="container">
-  <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> <span data-lang="es">Capacitación y Soporte</span><span data-lang="en">Training &amp; Support</span></h2>
-  <p class="section-summary" data-lang="es">Los elementos transversales: coordinadores PIP, formación de facilitadores y la logística para capacitar 460+ docentes en 2 días.</p>
-  <p class="section-summary" data-lang="en">Cross-cutting elements: PIP coordinators, facilitator training, and logistics for training 460+ teachers in 2 days.</p>
-
-  <div class="accordion">
-    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-      <span><span data-lang="es">Coordinadores PIP (~80)</span><span data-lang="en">PIP Coordinators (~80)</span></span>
-      <i class="fas fa-chevron-down chevron"></i>
-    </div>
-    <div class="accordion-content">
-      <p data-lang="es">Rol puramente logístico/técnico: computadoras e internet funcionando, horarios de laboratorio organizados, estudiantes acceden a ambas plataformas.</p>
-      <p data-lang="en">Purely logistical/technical role: computers and internet working, lab schedules organized, students access both platforms.</p>
-      <p data-lang="es"><strong>8 módulos:</strong> Contexto → Listados/contraseñas → Requisitos técnicos → Horarios → Práctica plataformas → Dashboards → Protocolos soporte → Simulación</p>
-      <p data-lang="en"><strong>8 modules:</strong> Context → Rosters/passwords → Technical requirements → Scheduling → Platform practice → Dashboards → Support protocols → Simulation</p>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-      <span><span data-lang="es">Formación de Facilitadores (Train the Trainers)</span><span data-lang="en">Train the Trainers</span></span>
-      <i class="fas fa-chevron-down chevron"></i>
-    </div>
-    <div class="accordion-content">
-      <p data-lang="es">1 día de preparación para 5-6 facilitadores. 4 bloques: Contexto y Alineación → Módulos Críticos → Ceremonia y Momentos Clave → Logística.</p>
-      <p data-lang="en">1-day prep for 5-6 facilitators. 4 blocks: Context &amp; Alignment → Critical Modules → Ceremony &amp; Key Moments → Logistics.</p>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-      <span><span data-lang="es">Logística de Capacitación</span><span data-lang="en">Training Logistics</span></span>
-      <i class="fas fa-chevron-down chevron"></i>
-    </div>
-    <div class="accordion-content">
-      <ul style="list-style:none;padding:0">
-        <li style="padding:6px 0"><i class="fas fa-users" style="color:var(--orange);width:20px"></i> <span data-lang="es">460+ docentes en 2 días (marzo 9-10, 2026) en UPC</span><span data-lang="en">460+ teachers over 2 days (March 9-10, 2026) at UPC</span></li>
-        <li style="padding:6px 0"><i class="fas fa-columns" style="color:var(--orange);width:20px"></i> <span data-lang="es">3 tracks simultáneos en aulas paralelas</span><span data-lang="en">3 simultaneous tracks in parallel rooms</span></li>
-        <li style="padding:6px 0"><i class="fas fa-bus" style="color:var(--orange);width:20px"></i> <span data-lang="es">Transporte coordinado (buses desde UGELs)</span><span data-lang="en">Coordinated transport (buses from UGELs)</span></li>
-        <li style="padding:6px 0"><i class="fas fa-id-card" style="color:var(--orange);width:20px"></i> <span data-lang="es">Listas de asistencia con DNI</span><span data-lang="en">Attendance lists with DNI</span></li>
-        <li style="padding:6px 0"><i class="fas fa-print" style="color:var(--orange);width:20px"></i> <span data-lang="es">Paquetes impresos por track</span><span data-lang="en">Print packages per track</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-      <span><span data-lang="es">Campaña de Sensibilización: Directores</span><span data-lang="en">Director Awareness Campaign</span></span>
-      <i class="fas fa-chevron-down chevron"></i>
-    </div>
-    <div class="accordion-content">
-      <p data-lang="es">Reuniones presenciales con directores de las 100+ escuelas (2-4 de marzo, Swissôtel). Firman carta de compromiso y entregan listas de docentes y estudiantes.</p>
-      <p data-lang="en">In-person meetings with principals of 100+ schools (March 2-4, Swissôtel). They sign commitment letters and provide teacher and student lists.</p>
-      <ul style="list-style:none;padding:0;margin-top:12px">
-        <li style="padding:4px 0"><a href="https://docs.google.com/presentation/d/1O0b6NAEbRuFjfIN9uHExRueRwrJashlZ/edit" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint" style="color:var(--orange)"></i> <span data-lang="es">Slides para Directores</span><span data-lang="en">Director Slides</span></a></li>
-        <li style="padding:4px 0"><a href="https://drive.google.com/drive/folders/1ldZR9ehCFgvht0kkyPT1hykuPyTX2Vy0" target="_blank" rel="noopener"><i class="fas fa-images" style="color:var(--orange)"></i> <span data-lang="es">Fotos de la Campaña</span><span data-lang="en">Campaign Photos</span></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="callout callout-replicate">
-    <h4><i class="fas fa-sync-alt"></i> <span data-lang="es">Para Replicar</span><span data-lang="en">To Replicate</span></h4>
-    <p data-lang="es"><strong>Transferible:</strong> Modelo de coordinador PIP, formato TtT, estructura logística de capacitación masiva, estrategia de engagement con directores</p>
-    <p data-lang="en"><strong>Transferable:</strong> PIP coordinator model, TtT format, mass training logistics structure, director engagement strategy</p>
-  </div>
-</div>
-</section>
+<!-- Capacitación section merged into Implementación -->
 
 <!-- SECTION 5: EVALUACIÓN DE IMPACTO -->
 <section class="section section-alt" id="evaluacion">
@@ -3657,9 +3592,9 @@
 <!-- SECTION 6: IMPLEMENTACIÓN -->
 <section class="section" id="implementacion">
 <div class="container">
-  <h2 class="section-title"><i class="fas fa-sitemap"></i> <span data-lang="es">Implementación</span><span data-lang="en">Implementation</span></h2>
-  <p class="section-summary" data-lang="es">Cómo opera EMC a escala: la estructura DRELM-UGEL de 3 niveles, el cronograma y los roles de cada socio.</p>
-  <p class="section-summary" data-lang="en">How EMC operates at scale: the 3-level DRELM-UGEL structure, timeline, and each partner's roles.</p>
+  <h2 class="section-title"><i class="fas fa-sitemap"></i> <span data-lang="es">Implementación y Capacitación</span><span data-lang="en">Implementation &amp; Training</span></h2>
+  <p class="section-summary" data-lang="es">Cómo opera EMC a escala: estructura DRELM-UGEL, cronograma, roles, coordinadores PIP, formación de facilitadores y logística para capacitar 460+ docentes.</p>
+  <p class="section-summary" data-lang="en">How EMC operates at scale: DRELM-UGEL structure, timeline, roles, PIP coordinators, facilitator training, and logistics for 460+ teachers.</p>
 
   <!-- 3-Level Structure -->
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:20px 0">
@@ -3723,10 +3658,65 @@
     </div>
   </div>
 
+  <!-- Training & Support (merged from former Section 4) -->
+  <div class="accordion">
+    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+      <span><i class="fas fa-chalkboard-teacher" style="color:var(--teal); margin-right:8px;"></i><span data-lang="es">Coordinadores PIP (~80)</span><span data-lang="en">PIP Coordinators (~80)</span></span>
+      <i class="fas fa-chevron-down chevron"></i>
+    </div>
+    <div class="accordion-content">
+      <p data-lang="es">Rol puramente logístico/técnico: computadoras e internet funcionando, horarios de laboratorio organizados, estudiantes acceden a ambas plataformas.</p>
+      <p data-lang="en">Purely logistical/technical role: computers and internet working, lab schedules organized, students access both platforms.</p>
+      <p data-lang="es"><strong>8 módulos:</strong> Contexto → Listados/contraseñas → Requisitos técnicos → Horarios → Práctica plataformas → Dashboards → Protocolos soporte → Simulación</p>
+      <p data-lang="en"><strong>8 modules:</strong> Context → Rosters/passwords → Technical requirements → Scheduling → Platform practice → Dashboards → Support protocols → Simulation</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+      <span><span data-lang="es">Formación de Facilitadores (Train the Trainers)</span><span data-lang="en">Train the Trainers</span></span>
+      <i class="fas fa-chevron-down chevron"></i>
+    </div>
+    <div class="accordion-content">
+      <p data-lang="es">1 día de preparación para 5-6 facilitadores. 4 bloques: Contexto y Alineación → Módulos Críticos → Ceremonia y Momentos Clave → Logística.</p>
+      <p data-lang="en">1-day prep for 5-6 facilitators. 4 blocks: Context &amp; Alignment → Critical Modules → Ceremony &amp; Key Moments → Logistics.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+      <span><span data-lang="es">Logística de Capacitación</span><span data-lang="en">Training Logistics</span></span>
+      <i class="fas fa-chevron-down chevron"></i>
+    </div>
+    <div class="accordion-content">
+      <ul style="list-style:none;padding:0">
+        <li style="padding:6px 0"><i class="fas fa-users" style="color:var(--orange);width:20px"></i> <span data-lang="es">460+ docentes en 2 días (marzo 9-10, 2026) en UPC</span><span data-lang="en">460+ teachers over 2 days (March 9-10, 2026) at UPC</span></li>
+        <li style="padding:6px 0"><i class="fas fa-columns" style="color:var(--orange);width:20px"></i> <span data-lang="es">3 tracks simultáneos en aulas paralelas</span><span data-lang="en">3 simultaneous tracks in parallel rooms</span></li>
+        <li style="padding:6px 0"><i class="fas fa-bus" style="color:var(--orange);width:20px"></i> <span data-lang="es">Transporte coordinado (buses desde UGELs)</span><span data-lang="en">Coordinated transport (buses from UGELs)</span></li>
+        <li style="padding:6px 0"><i class="fas fa-id-card" style="color:var(--orange);width:20px"></i> <span data-lang="es">Listas de asistencia con DNI</span><span data-lang="en">Attendance lists with DNI</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+      <span><span data-lang="es">Campaña de Sensibilización: Directores</span><span data-lang="en">Director Awareness Campaign</span></span>
+      <i class="fas fa-chevron-down chevron"></i>
+    </div>
+    <div class="accordion-content">
+      <p data-lang="es">Reuniones presenciales con directores de las 100+ escuelas (2-4 de marzo, Swissôtel). Firman carta de compromiso y entregan listas de docentes y estudiantes.</p>
+      <p data-lang="en">In-person meetings with principals of 100+ schools (March 2-4, Swissôtel). They sign commitment letters and provide teacher and student lists.</p>
+      <ul style="list-style:none;padding:0;margin-top:12px">
+        <li style="padding:4px 0"><a href="https://docs.google.com/presentation/d/1O0b6NAEbRuFjfIN9uHExRueRwrJashlZ/edit" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint" style="color:var(--orange)"></i> <span data-lang="es">Slides para Directores</span><span data-lang="en">Director Slides</span></a></li>
+        <li style="padding:4px 0"><a href="https://drive.google.com/drive/folders/1ldZR9ehCFgvht0kkyPT1hykuPyTX2Vy0" target="_blank" rel="noopener"><i class="fas fa-images" style="color:var(--orange)"></i> <span data-lang="es">Fotos de la Campaña</span><span data-lang="en">Campaign Photos</span></a></li>
+      </ul>
+    </div>
+  </div>
+
   <div class="callout callout-replicate">
     <h4><i class="fas fa-sync-alt"></i> <span data-lang="es">Para Replicar</span><span data-lang="en">To Replicate</span></h4>
-    <p data-lang="es"><strong>Transferible:</strong> Modelo de coordinación UGEL/distrito, engagement con directores, estructura de soporte de 3 niveles, tabla de roles</p>
-    <p data-lang="en"><strong>Transferable:</strong> UGEL/district coordination model, director engagement, 3-level support structure, roles table</p>
+    <p data-lang="es"><strong>Transferible:</strong> Modelo de coordinación UGEL/distrito, coordinadores PIP, modelo TtT, logística de capacitación masiva, engagement con directores, estructura de soporte de 3 niveles</p>
+    <p data-lang="en"><strong>Transferable:</strong> UGEL/district coordination model, PIP coordinators, TtT model, mass training logistics, director engagement, 3-level support structure</p>
   </div>
 </div>
 </section>
@@ -3736,6 +3726,11 @@
   <h2 class="section-title"><i class="fas fa-folder-open"></i> <span data-lang="es">Biblioteca de Documentos</span><span data-lang="en">Document Library</span></h2>
   <p class="section-summary" data-lang="es">Todos los documentos del programa. Filtra por categoría o busca por título.</p>
   <p class="section-summary" data-lang="en">All program documents. Filter by category or search by title.</p>
+
+  <div class="doc-search-bar" style="position:relative; max-width:500px; margin:24px auto 16px;">
+    <i class="fas fa-search" style="position:absolute; left:16px; top:50%; transform:translateY(-50%); color:var(--text-muted); font-size:0.9rem; pointer-events:none;"></i>
+    <input type="text" id="doc-search" placeholder="Buscar documentos..." data-placeholder-es="Buscar documentos..." data-placeholder-en="Search documents..." style="width:100%; padding:12px 16px 12px 44px; border:1px solid rgba(0,0,0,0.1); border-radius:10px; background:rgba(0,0,0,0.02); color:var(--text); font-size:0.95rem; font-family:var(--font-body); outline:none; transition:border-color 0.2s, box-shadow 0.2s;">
+  </div>
 
   <div class="filter-chips-wrap" style="display:flex;flex-wrap:wrap;gap:8px;margin:20px 0">
     <button class="chip active" data-filter="all" onclick="filterDocs('all',this)"><span data-lang="es">Todos</span><span data-lang="en">All</span></button>
@@ -3918,7 +3913,7 @@ spySections.forEach(s => spyObserver.observe(s));
 // ============ DOCUMENT RENDERING ============
 function renderDocs() {
   const grid = document.getElementById('doc-grid');
-  const searchVal = (document.getElementById('global-search').value || '').toLowerCase();
+  const searchVal = (document.getElementById('doc-search').value || '').toLowerCase();
   const lang = currentLang;
 
   const filtered = DOCUMENTS.filter(doc => {
@@ -3951,50 +3946,16 @@ function filterDocs(cat, btn) {
   renderDocs();
 }
 
-// ============ GLOBAL SEARCH (in header) ============
-document.getElementById('global-search').addEventListener('input', e => {
-  const val = e.target.value.toLowerCase().trim();
-  if (!val) {
-    // Reset everything
-    document.querySelectorAll('section[id]').forEach(s => { s.style.opacity = '1'; s.style.pointerEvents = ''; });
-    document.querySelectorAll('.accordion').forEach(a => a.style.opacity = '1');
-    renderDocs();
-    return;
-  }
-  // Filter sections — show matching, dim non-matching
-  document.querySelectorAll('section[id]').forEach(section => {
-    if (section.id === 'hero') { section.style.opacity = '1'; return; }
-    if (section.id === 'documentos') { section.style.opacity = '1'; return; }
-    const text = section.textContent.toLowerCase();
-    const match = text.includes(val);
-    section.style.opacity = match ? '1' : '0.15';
-    section.style.pointerEvents = match ? '' : 'none';
-    section.style.transition = 'opacity 0.3s';
-    // If section matches, open matching accordions
-    if (match) {
-      section.querySelectorAll('.accordion').forEach(acc => {
-        const accText = acc.textContent.toLowerCase();
-        if (accText.includes(val)) {
-          acc.classList.add('open');
-          acc.style.opacity = '1';
-        } else {
-          acc.style.opacity = '0.4';
-        }
-      });
-    }
-  });
-  // Also filter docs
-  renderDocs();
+// ============ DOCUMENT SEARCH (in Biblioteca) ============
+document.getElementById('doc-search').addEventListener('input', () => renderDocs());
+document.getElementById('doc-search').addEventListener('focus', function() {
+  this.style.borderColor = 'var(--orange)';
+  this.style.boxShadow = '0 0 0 3px rgba(245,123,33,0.12)';
 });
-
-// Sync mobile search with header search
-const mobileSearchInput = document.getElementById('mobile-search-input');
-if (mobileSearchInput) {
-  mobileSearchInput.addEventListener('input', e => {
-    document.getElementById('global-search').value = e.target.value;
-    document.getElementById('global-search').dispatchEvent(new Event('input'));
-  });
-}
+document.getElementById('doc-search').addEventListener('blur', function() {
+  this.style.borderColor = 'rgba(0,0,0,0.1)';
+  this.style.boxShadow = 'none';
+});
 
 // ============ INIT ============
 document.addEventListener('DOMContentLoaded', () => {
