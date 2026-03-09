@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eligiendo Mi Camino — One Pager</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #FFFFFF;
+    color: #26282B;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* === HEADER BAR === */
+  .header {
+    background: linear-gradient(135deg, #F57B21 0%, #E06A10 100%);
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .header-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: white;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .header-logo small {
+    display: block;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+  .header-right {
+    text-align: right;
+  }
+  .award-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 8.5px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .award-badge .star { font-size: 12px; }
+  .partners-bar {
+    font-size: 8px;
+    color: rgba(255,255,255,0.85);
+    margin-top: 4px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  /* === HERO STRIP === */
+  .hero {
+    background: #003366;
+    padding: 20px 28px;
+    color: white;
+  }
+  .hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  .hero h1 span { color: #FFB84D; }
+  .hero p {
+    font-size: 9.5px;
+    line-height: 1.65;
+    opacity: 0.88;
+    max-width: 90%;
+  }
+
+  /* === STATS === */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid #eee;
+  }
+  .stat {
+    text-align: center;
+    padding: 14px 8px;
+    border-right: 1px solid #eee;
+  }
+  .stat:last-child { border-right: none; }
+  .stat .num {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: #F57B21;
+    line-height: 1;
+  }
+  .stat .label {
+    font-size: 8px;
+    color: #5C5E66;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+
+  /* === CONTENT BODY === */
+  .content {
+    padding: 18px 28px 14px;
+  }
+
+  /* === TWO PILLARS === */
+  .pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .pillar {
+    border-radius: 8px;
+    padding: 14px 16px;
+    position: relative;
+  }
+  .pillar-math {
+    background: #FFF8F0;
+    border: 1px solid rgba(245,123,33,0.2);
+    border-top: 3px solid #F57B21;
+  }
+  .pillar-coach {
+    background: #F0FAF7;
+    border: 1px solid rgba(45,138,110,0.2);
+    border-top: 3px solid #2D8A6E;
+  }
+  .pillar-icon {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .pillar h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .pillar-math h3 { color: #F57B21; }
+  .pillar-coach h3 { color: #2D8A6E; }
+  .pillar p {
+    font-size: 8.5px;
+    line-height: 1.6;
+    color: #5C5E66;
+  }
+  .pillar .highlight {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+  .pillar-math .highlight {
+    background: #F57B21;
+    color: white;
+  }
+  .pillar-coach .highlight {
+    background: #2D8A6E;
+    color: white;
+  }
+
+  /* === EVIDENCE === */
+  .evidence {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .evidence-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    background: #FAFAFA;
+    border-radius: 6px;
+    border-left: 3px solid #003366;
+  }
+  .evidence-num {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #003366;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .evidence-text {
+    font-size: 8px;
+    line-height: 1.55;
+    color: #5C5E66;
+  }
+  .evidence-text strong { color: #26282B; }
+
+  /* === SECTION HEADER === */
+  .section-head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-head::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+  }
+
+  /* === WHAT MAKES IT DIFFERENT === */
+  .diff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .diff-item {
+    text-align: center;
+    padding: 10px 6px;
+    border-radius: 6px;
+    background: #FAFAFA;
+  }
+  .diff-item .emoji { font-size: 18px; margin-bottom: 4px; }
+  .diff-item .label {
+    font-size: 8px;
+    font-weight: 600;
+    color: #26282B;
+    line-height: 1.4;
+  }
+  .diff-item .sub {
+    font-size: 7px;
+    color: #888;
+    margin-top: 2px;
+    line-height: 1.3;
+  }
+
+  /* === RCT === */
+  .rct {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .rct-left {
+    padding: 12px 14px;
+    background: linear-gradient(135deg, #F8F4FF 0%, #F0EEFA 100%);
+    border-radius: 8px;
+    border: 1px solid rgba(0,51,102,0.1);
+  }
+  .rct-left h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 6px;
+  }
+  .rct-left p {
+    font-size: 8.5px;
+    line-height: 1.6;
+    color: #5C5E66;
+  }
+  .rct-left p strong { color: #26282B; }
+  .arms {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .arm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: white;
+    border: 1px solid #eee;
+  }
+  .arm-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .arm-label {
+    font-size: 8.5px;
+    font-weight: 600;
+    color: #26282B;
+  }
+  .arm-desc {
+    font-size: 7.5px;
+    color: #888;
+  }
+
+  /* === CTA BOX === */
+  .cta {
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    border-radius: 10px;
+    padding: 18px 22px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 190px;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .cta h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .cta h3 span { color: #FFB84D; }
+  .cta p {
+    font-size: 8.5px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+  .cta-link-box {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    padding: 12px 16px;
+    text-align: center;
+    min-width: 180px;
+  }
+  .cta-url {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7.5px;
+    font-weight: 600;
+    color: #FFB84D;
+    word-break: break-all;
+    letter-spacing: 0.2px;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .cta-pass {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 8px;
+    color: white;
+    font-weight: 500;
+  }
+  .cta-pass code {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #FFB84D;
+    letter-spacing: 1px;
+  }
+
+  /* === FOOTER === */
+  .footer {
+    background: #F8F8F8;
+    padding: 12px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+  }
+  .footer-left {
+    font-size: 7.5px;
+    color: #888;
+    line-height: 1.5;
+  }
+  .footer-left strong { color: #26282B; }
+  .footer-right {
+    font-size: 7px;
+    color: #aaa;
+    text-align: right;
+    font-style: italic;
+  }
+
+  /* === PRINT === */
+  @media print {
+    body { width: 210mm; }
+    .page {
+      min-height: 297mm;
+      page-break-after: avoid;
+    }
+  }
+
+  /* === SCREEN SCALING === */
+  @media screen {
+    body {
+      max-width: 794px;
+      width: 100%;
+      min-height: auto;
+    }
+    .page {
+      width: 100%;
+      min-height: auto;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-logo">
+        Eligiendo Mi Camino
+        <small>Banco Mundial &times; DRELM &times; uDocz &times; UPC</small>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="award-badge">
+        <span class="star">&#9733;</span> WBG PRESIDENTIAL INNOVATION AWARD
+      </div>
+      <div class="partners-bar">Lima, Per&uacute; &bull; 2026</div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Two AI tools. 110 public schools. <span>One question:</span><br>can we prove it works — and make it replicable?</h1>
+    <p>An adaptive math tutor and an AI career coach deployed within existing school hours, using existing infrastructure, with regular teachers. A cluster-randomized trial to measure real impact. Everything documented so another country can replicate it.</p>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="num">110</div><div class="label">Public Schools</div></div>
+    <div class="stat"><div class="num">460+</div><div class="label">Teachers Trained</div></div>
+    <div class="stat"><div class="num">~6,000</div><div class="label">Students</div></div>
+    <div class="stat"><div class="num">5,940</div><div class="label">Diagnostic Questions</div></div>
+  </div>
+
+  <div class="content">
+
+    <!-- TWO PILLARS -->
+    <div class="pillars">
+      <div class="pillar pillar-math">
+        <div class="pillar-icon">&#129504;</div>
+        <h3>AI Math Tutor</h3>
+        <p>Adaptive practice platform with 5,940 diagnostic questions mapped to Peru's 5th-year curriculum. Each wrong answer reveals a specific misconception. Teachers get real-time dashboards. Built on Craig Barton / Eedi methodology.</p>
+        <div class="highlight">5-MOMENT MODEL &bull; 90 MIN/SESSION</div>
+      </div>
+      <div class="pillar pillar-coach">
+        <div class="pillar-icon">&#127919;</div>
+        <h3>AI Career Coach</h3>
+        <p>8-step journey from self-knowledge to an actionable post-secondary plan. Uses Peru's labor market data (MTPE), licensed university listings, and scholarship databases. Includes AI safeguarding protocol for minors.</p>
+        <div class="highlight">3 PHASES &bull; DISCOVER &bull; EXPLORE &bull; ACT</div>
+      </div>
+    </div>
+
+    <!-- EVIDENCE -->
+    <div class="section-head">Evidence base</div>
+    <div class="evidence">
+      <div class="evidence-card">
+        <div class="evidence-num">0.29&sigma;</div>
+        <div class="evidence-text"><strong>Personalized instruction</strong> improves learning outcomes.<br>Meta-analysis, 96 RCTs (Nickow et al., 2020)</div>
+      </div>
+      <div class="evidence-card">
+        <div class="evidence-num">d=0.35</div>
+        <div class="evidence-text"><strong>Career guidance</strong> improves decisions &amp; labor outcomes.<br>Meta-analysis (Whiston et al., 2017)</div>
+      </div>
+    </div>
+
+    <!-- DESIGNED TO WORK WITH WHAT SCHOOLS HAVE -->
+    <div class="section-head">Designed for real conditions</div>
+    <div class="diff-grid">
+      <div class="diff-item">
+        <div class="emoji">&#128197;</div>
+        <div class="label">Existing<br>Class Hours</div>
+        <div class="sub">No extra time needed</div>
+      </div>
+      <div class="diff-item">
+        <div class="emoji">&#128105;&#8205;&#127979;</div>
+        <div class="label">Regular<br>Teachers</div>
+        <div class="sub">Certified in 4 days</div>
+      </div>
+      <div class="diff-item">
+        <div class="emoji">&#128187;</div>
+        <div class="label">School<br>Computer Labs</div>
+        <div class="sub">No new hardware</div>
+      </div>
+      <div class="diff-item">
+        <div class="emoji">&#128101;</div>
+        <div class="label">1 Computer<br>per 30 Students</div>
+        <div class="sub">Rotation model</div>
+      </div>
+    </div>
+
+    <!-- RCT + 3 ARMS -->
+    <div class="section-head">Rigorous impact evaluation</div>
+    <div class="rct">
+      <div class="rct-left">
+        <h4>The Personalization Trap</h4>
+        <p>AI tutors silently make <strong>three metacognitive decisions</strong> students should learn to make themselves: what to review, where the error is, and whether the approach works. Performance looks great while the AI is on. <strong>The question is what happens when it's removed.</strong></p>
+        <p style="margin-top:6px; font-size:7.5px; color:#003366; font-weight:600;">AEA Registry: AEARCTR-0012847 &bull; IRB Protocol 564</p>
+      </div>
+      <div class="arms">
+        <div class="arm">
+          <div class="arm-dot" style="background:#6B7280;"></div>
+          <div>
+            <div class="arm-label">Control</div>
+            <div class="arm-desc">Regular classes, no AI &mdash; 22 schools</div>
+          </div>
+        </div>
+        <div class="arm">
+          <div class="arm-dot" style="background:#2D8A6E;"></div>
+          <div>
+            <div class="arm-label">Standard AI</div>
+            <div class="arm-desc">Full AI tutor &mdash; 44 schools</div>
+          </div>
+        </div>
+        <div class="arm">
+          <div class="arm-dot" style="background:#F57B21;"></div>
+          <div>
+            <div class="arm-label">Modified AI (+4 min/session)</div>
+            <div class="arm-desc">AI + metacognitive scaffolding &mdash; 44 schools</div>
+          </div>
+        </div>
+        <div style="padding:6px 10px; background:#FFF8F0; border-radius:6px; border:1px solid rgba(245,123,33,0.15);">
+          <p style="font-size:7.5px; color:#5C5E66; line-height:1.5;">Primary outcome: <strong style="color:#F57B21;">transfer test 4 months after removing the platform.</strong> If Modified AI wins, the trap is real — and has a solution.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <div>
+        <h3>Everything you need to <span>replicate this program.</span></h3>
+        <p>Question banks, training materials, evaluation instruments, official letters, partner frameworks, session guides, and replication toolkits. All in one searchable, bilingual hub.</p>
+      </div>
+      <div class="cta-link-box">
+        <div class="cta-url">ezequielmolina-lang.github.io/<br>emc-steal-shamelessly-hub</div>
+        <div class="cta-pass">&#128274;&ensp;Password: <code>emcwb2026</code></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <strong>Contact:</strong> Ezequiel Molina &amp; Carolina Lopez &bull; World Bank Education Global Practice<br>
+      <strong>Links:</strong> worldbank.org/en/country/peru/brief/eligiendo-mi-camino &bull; eligiendomicamino.com
+    </div>
+    <div class="footer-right">"Steal shamelessly, share seamlessly."<br>&mdash; Ajay Banga</div>
+  </div>
+
+</div>
+</body>
+</html>
